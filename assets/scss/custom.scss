@@ -1,6 +1,91 @@
+@import "../sprites/sprite";
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('/assets/fonts/latoregular.ttf') format('truetype');
+}
+
+body {
+    min-width: 320px;
+}
+
 /* ------------------------------------
     Header Styles
 ------------------------------------- */
-h1 {
-    color: deepskyblue;
+
+.header {
+    
+    &--bgc {
+        background: url(/assets/images/header__bgc-min.jpg) no-repeat center;
+        background-size: cover;
+        height: 750px;
+    }
+    
+    &__logo {
+        display: inline-block;
+        margin-top: 20px;        
+    }
+    
+    &__icon {
+        display: inline-block;
+        margin-top: 20px;
+        margin-right: 20px;  
+        cursor: pointer;
+        // &:hover {
+
+        // }
+        &--insta {
+           @include sprite($icon-instagram);
+        }
+        &--vk {
+           @include sprite($icon-vk);
+        }
+        &--fb {
+           @include sprite($icon-fb);
+        }
+        &--twitter {
+           @include sprite($icon-twitter);
+        }
+    //    &--phone {
+    //        @include sprite($icon-phone);
+    //     }
+    }
+    
+    &__link {
+         display:  inline-block;
+         margin-top: 20px;
+         font-family: 'Lato-Regular', sans-serif;
+         font-size: 16px;
+        border-bottom:1px solid #aaabaa;
+        padding-bottom:2px;
+         color: #aaabaa;
+         text-align: right;
+         transition: all .3s ease;
+         &:hover {
+             text-decoration: none;
+             color: #fff;
+         }
+    }
+    
+    &__info {
+        display: block;
+        margin-top: 20px;
+        font-size: 16px;
+        color: #aaabaa;
+        transition: all .3s ease;
+        text-align: center;
+        position: relative;
+        &:before {
+           position: absolute;
+           content: '';
+          @include sprite($icon-phone);
+        //   margin-left: 10px;
+           left: 50px;
+        }
+        &:hover {
+          color: #fff;
+          text-decoration: none;
+        }
+    }
+    
 }
