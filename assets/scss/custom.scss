@@ -5,8 +5,57 @@
     src: url('/assets/fonts/latoregular.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('/assets/fonts/latobold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Museo-Cyrl';
+    src: url('/assets/fonts/Museocyrl500.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nautilus-Pompilius';
+    src: url('/assets/fonts/nautiluspompilius.ttf') format('truetype');
+}
+
 body {
     min-width: 320px;
+}
+
+.navbar-default {
+    box-shadow: none;
+    background-image: none;
+    background-color: rgba(128,128,128, .2);
+    border-color:rgba(128,128,128, .2);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color:  #aaabaa;
+    text-transform: uppercase;
+    text-shadow: none;
+    font-family: 'Lato-Regular', sans-serif;
+    font-size: 14px;
+    transition: all .3s ease;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
+    background-image: none;
+    box-shadow: none;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color:  #fff;
+    background-color: transparent;
+}
+
+.nav>li>a {
+        padding: 15px 34px;    
 }
 
 /* ------------------------------------
@@ -24,6 +73,8 @@ body {
     &__logo {
         display: inline-block;
         margin-top: 20px;        
+        margin-bottom: 14px;
+        // margin-right: 6px;
     }
     
     &__icon {
@@ -31,9 +82,6 @@ body {
         margin-top: 20px;
         margin-right: 20px;  
         cursor: pointer;
-        // &:hover {
-
-        // }
         &--insta {
            @include sprite($icon-instagram);
         }
@@ -46,9 +94,6 @@ body {
         &--twitter {
            @include sprite($icon-twitter);
         }
-    //    &--phone {
-    //        @include sprite($icon-phone);
-    //     }
     }
     
     &__link {
@@ -59,7 +104,8 @@ body {
         border-bottom:1px solid #aaabaa;
         padding-bottom:2px;
          color: #aaabaa;
-         text-align: right;
+        //  text-align: right;
+        display: inline-block;
          transition: all .3s ease;
          &:hover {
              text-decoration: none;
@@ -69,18 +115,31 @@ body {
     
     &__info {
         display: block;
-        margin-top: 20px;
+        margin-left: 140px;
+        font-family: 'Lato-Regular', sans-serif;
         font-size: 16px;
         color: #aaabaa;
         transition: all .3s ease;
-        text-align: center;
-        position: relative;
-        &:before {
-           position: absolute;
-           content: '';
-          @include sprite($icon-phone);
-        //   margin-left: 10px;
-           left: 50px;
+        text-align: left;
+        &--phone {
+            margin-top: 20px;
+            position: relative;
+            &:before {
+            position: absolute;
+            content: '';
+            @include sprite($icon-phone);
+                left: -30px;
+            }
+        }
+        &--marker {
+            margin-top: 10px;
+            position: relative;
+            &:before {
+            position: absolute;
+            content: '';
+            @include sprite($icon-location);
+                left: -30px;
+            }
         }
         &:hover {
           color: #fff;
@@ -88,4 +147,58 @@ body {
         }
     }
     
+    &__title {
+        font-family: 'Museo-Cyrl', sans-serif;
+        // text-align: center;
+        font-weight: bold;
+        color: #fff;
+        font-size: 60px;
+        letter-spacing: 2px;
+        margin-top: 96px;
+    }
+    
+    &__subtitle {
+        font-family:  'Nautilus-Pompilius', sans-serif;
+        // text-align: center;
+        font-size: 28px;
+        color: #fff;
+    }
+    
+    &__modal {
+        font-family: 'Lato-Bold', sans-serif;
+        font-size: 17px;
+        text-transform: uppercase;
+        background-color: #27cbc0;
+        border-style: none;
+        padding: 22px 32px;
+        border-radius:  4px;
+        margin-top: 60px;
+        transition: all .3s ease;
+        &:hover {
+            background-color: #29d9cd;
+        } 
+    }
+    
+}
+
+/* ------------------------------------
+    Our Cars Styles
+------------------------------------- */
+
+.ourcars {
+    &__title {
+        margin-top: 90px;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Museo-Cyrl', sans-serif;
+        position: relative;
+        &:before {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 100%;
+            bottom: -10px;
+            background-color: #27cbc0;
+        }
+    }
 }
