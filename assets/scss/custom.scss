@@ -24,6 +24,10 @@ body {
     min-width: 320px;
 }
 
+.container {
+    padding: 0;
+}
+
 .navbar-default {
     box-shadow: none;
     background-image: none;
@@ -74,7 +78,6 @@ body {
         display: inline-block;
         margin-top: 20px;        
         margin-bottom: 14px;
-        // margin-right: 6px;
     }
     
     &__icon {
@@ -164,9 +167,10 @@ body {
         color: #fff;
     }
     
-    &__modal {
+    &__button {
         font-family: 'Lato-Bold', sans-serif;
         font-size: 17px;
+        color: #fff;
         text-transform: uppercase;
         background-color: #27cbc0;
         border-style: none;
@@ -177,6 +181,11 @@ body {
         &:hover {
             background-color: #29d9cd;
         } 
+        &--howto {
+                padding: 18px 36px;
+                margin-top: 64px;
+                margin-right: 6px;
+        }
     }
     
 }
@@ -188,6 +197,7 @@ body {
 .ourcars {
     &__title {
         margin-top: 90px;
+        margin-bottom: 60px;
         text-align: center;
         font-size: 40px;
         font-family: 'Museo-Cyrl', sans-serif;
@@ -197,8 +207,217 @@ body {
             content: '';
             height: 2px;
             width: 100%;
-            bottom: -10px;
+            bottom: -14px;
             background-color: #27cbc0;
         }
     }
+    &__car {
+        margin-top: 30px;
+        color: #333;            
+        display: block;
+        span {
+            display: block;
+            font-family: 'Lato-Regular', sans-serif;
+            font-size: 16px;
+            color: #a7a7a7;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__image {
+        background-size:  contain;
+        height: 160px;
+        &--limo {
+            background: url(/assets/images/ourcars__limo-min.jpg) no-repeat center;
+        }
+        &--sedan {
+            background: url(/assets/images/ourcars__sedan-min.jpg) no-repeat center;
+        }
+       &--suv {
+            background: url(/assets/images/ourcars__suv-min.jpg) no-repeat center;
+        }
+       &--retro {
+            background: url(/assets/images/ourcars__retro-min.jpg) no-repeat center;
+       }
+       &--cabriolet {
+            background: url(/assets/images/ourcars__cabriolet-min.jpg) no-repeat center;
+       }
+       &--exclusive {
+            background: url(/assets/images/ourcars__exclusive-min.jpg) no-repeat center;
+       }
+       &--van {
+            background: url(/assets/images/ourcars__van-min.jpg) no-repeat center;
+       }
+       &--bus {
+            background: url(/assets/images/ourcars__bus-min.jpg) no-repeat center;
+       }
+    }
+    &__subtitle {
+        position: relative;
+        display: block;
+        font-family: 'Lato-Bold', sans-serif;
+        font-size: 22px;
+        padding-top: 14px; 
+        margin-top: 4px;
+        margin-bottom: 4px;
+        &:before {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 30%;
+            top: 0;
+            background-color: #27cbc0;
+        }      
+    }
+    &__border {
+        margin-top: 40px;
+        padding-bottom: 40px;
+        border:  1px solid transparent;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: all .3s ease-out;
+        &:hover {
+            border:  1px solid rgba(170, 171, 170, .2);
+            box-shadow: 0px 0px 10px 0px rgba(170, 171, 170, .7);
+        }
+    }
+    &__button {
+        font-family: 'Lato-Bold', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        background-color: #fff;
+        color: #29d9cd;
+        border: 2px solid  #27cbc0;
+        padding:  18px 52px ;
+        border-radius:  4px;
+        margin-top: 30px;
+        margin-bottom: 100px;
+        transition: all .3s ease;
+        &:hover {
+            background-color: #29d9cd;
+            border-color: #29d9cd;
+            color: #fff;
+        } 
+         &:focus {
+            outline: none; 
+         }
+    }
+}
+
+/* ------------------------------------
+    How to
+------------------------------------- */
+
+.howto {
+    &__left {
+        &--bgc {
+            background: url(/assets/images/howto__left-min.jpg) no-repeat center;
+            background-size:  cover;            
+        }
+         height: 512px;
+    }
+    &__right {
+        margin-left: 44px;
+        margin-top: 100px;
+        &--bgc {
+            height: 512px;
+            background-color: #f2f2f2;
+        }
+    }
+    &__title {
+        text-align: left;
+        color: #fff;
+        font-family: 'Museo-Cyrl', sans-serif;
+        font-size: 40px;
+        width: 464px;
+        margin-bottom: 0;
+        position: relative;
+        &:after {
+            position: absolute;
+            content: '';
+            height: 2px;
+            width: 48px;
+            background-color: #29d9cd;
+            right: -17%;
+            top: 32px;
+        }
+    }
+    &__wrapper {
+        text-align: right;
+        margin-top: 66px;
+        margin-right: 40px;
+        float: right;
+        &--driver {
+            float: left;
+            margin-left: 40px;
+            text-align: left;
+        }
+    }
+    &__subtitle {
+        display: block;
+        text-align: right;
+        color: #fff;
+        font-family: 'Museo-Cyrl', sans-serif;
+        font-size: 40px;
+        margin-bottom: 100px;
+        &--driver{
+            text-align: left;
+        }
+    }
+    &__button {
+         font-family: 'Lato-Bold', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        background-color: #fff;
+        color: #29d9cd;
+    }
+    &__step {
+        font-family: 'Lato-Regular', sans-serif;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    &__circle {
+        display: inline-block;
+        text-align: center;
+        margin-right: 14px;
+        padding: 4px;
+        width: 36px;
+        height: 36px;
+        border: 2px solid #29d9cd;
+        border-radius: 50%;
+        position: relative;
+        &:after {
+            position: absolute;
+            content: '';
+            height: 32px;
+            width: 2px;
+            background-color: #29d9cd;
+            top: 32px;
+            right:14px;
+        }
+       &--none {
+           position: relative;
+           &:after {
+            content: none;   
+           }
+       }
+    }
+    
+    &__driver {
+        &--bgc {
+            background: url(/assets/images/howto__right-min.jpg) no-repeat center;
+            background-size:  cover;            
+        }
+         height: 512px;
+    }
+}
+
+/* ------------------------------------
+    Footer Styles
+------------------------------------- */
+
+.footer {
+    height: 200px;
+    margin-top: 100px;
 }
