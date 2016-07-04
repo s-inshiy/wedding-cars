@@ -79,14 +79,18 @@ body {
   font-size: 14px;
   transition: all .3s ease; }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .open > a {
   background-image: none;
   box-shadow: none; }
 
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
   color: #fff; }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
   color: #fff;
   background-color: transparent; }
 
@@ -294,7 +298,7 @@ body {
   text-transform: uppercase;
   background-color: #fff;
   color: #29d9cd;
-  border: 2px solid  #27cbc0;
+  border: 2px solid #27cbc0;
   padding: 18px 52px;
   border-radius: 4px;
   margin-top: 30px;
@@ -319,6 +323,8 @@ body {
 .howto__right {
   margin-left: 44px;
   margin-top: 100px; }
+  .howto__right--left {
+    margin-left: 0; }
   .howto__right--bgc {
     height: 512px;
     background-color: #f2f2f2; }
@@ -402,8 +408,106 @@ body {
     background-size: cover; }
 
 /* ------------------------------------
+    Popular Cars  Styles
+------------------------------------- */
+.popularcars {
+  margin-bottom: 120px; }
+  .popularcars__title {
+    margin-top: 96px;
+    margin-bottom: 92px;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Museo-Cyrl', sans-serif;
+    position: relative; }
+    .popularcars__title:before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 64%;
+      bottom: -14px;
+      background-color: #27cbc0; }
+    .popularcars__title--about {
+      margin-bottom: 60px; }
+
+.slick-next {
+  background-image: url("/assets/images/icon__right.png");
+  background-repeat: no-repeat;
+  height: 34px;
+  width: 18px;
+  right: -40px; }
+  .slick-next:before {
+    content: none; }
+  .slick-next:hover, .slick-next:focus {
+    background-image: url("/assets/images/icon__right.png"); }
+
+.slick-prev {
+  background-image: url("/assets/images/icon__left.png");
+  background-repeat: no-repeat;
+  height: 34px;
+  width: 18px;
+  left: -40px; }
+  .slick-prev:before {
+    content: none; }
+  .slick-prev:hover, .slick-prev:focus {
+    background-image: url("/assets/images/icon__left.png"); }
+
+.slider__info {
+  width: 270px;
+  margin: 0 auto;
+  display: block; }
+
+.slider__image {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.slider__star:before {
+  font-size: 16px;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f006";
+  color: #ddd; }
+
+.slider__star--full:before {
+  color: #f3cc49; }
+
+.slider__title {
+  font-size: 20px;
+  font-family: 'Lato-Bold', sans-serif;
+  color: #333; }
+
+.slider__rating {
+  font-size: 'Lato-Regular', sans-serif;
+  font-size: 16px;
+  color: #808080; }
+
+.slider__more {
+  font-size: 16px;
+  font-family: 'Lato-Regular', sans-serif;
+  color: #27cbc0; }
+
+/* ------------------------------------
+    About Styles
+------------------------------------- */
+.about {
+  height: 534px; }
+  .about__info {
+    font-size: 18px;
+    font-family: 'Lato-Regular', sans-serif;
+    text-align: center;
+    margin-left: 10px; }
+  .about--bgc {
+    background-color: #f2f2f2; }
+
+/* ------------------------------------
     Footer Styles
 ------------------------------------- */
 .footer {
-  height: 200px;
-  margin-top: 100px; }
+  height: 82px;
+  margin-top: 100px;
+  background-color: #2e3333; }
+  .footer__info {
+    margin-top: 30px;
+    font-size: 16px;
+    font-family: 'Lato-Regular',sans-serif;
+    color: #646565; }

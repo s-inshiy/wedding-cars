@@ -1,5 +1,4 @@
 @import "../sprites/sprite";
-
 @font-face {
     font-family: 'Lato-Regular';
     src: url('/assets/fonts/latoregular.ttf') format('truetype');
@@ -31,12 +30,12 @@ body {
 .navbar-default {
     box-shadow: none;
     background-image: none;
-    background-color: rgba(128,128,128, .2);
-    border-color:rgba(128,128,128, .2);
+    background-color: rgba(128, 128, 128, .2);
+    border-color: rgba(128, 128, 128, .2);
 }
 
 .navbar-default .navbar-nav>li>a {
-    color:  #aaabaa;
+    color: #aaabaa;
     text-transform: uppercase;
     text-shadow: none;
     font-family: 'Lato-Regular', sans-serif;
@@ -44,78 +43,78 @@ body {
     transition: all .3s ease;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.open>a {
     background-image: none;
     box-shadow: none;
 }
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover {
     color: #fff;
 }
 
-.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
-    color:  #fff;
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
     background-color: transparent;
 }
 
 .nav>li>a {
-        padding: 15px 34px;    
+    padding: 15px 34px;
 }
+
 
 /* ------------------------------------
     Header Styles
 ------------------------------------- */
 
 .header {
-    
     &--bgc {
         background: url(/assets/images/header__bgc-min.jpg) no-repeat center;
         background-size: cover;
         height: 750px;
     }
-    
     &__logo {
         display: inline-block;
-        margin-top: 20px;        
+        margin-top: 20px;
         margin-bottom: 14px;
     }
-    
     &__icon {
         display: inline-block;
         margin-top: 20px;
-        margin-right: 20px;  
+        margin-right: 20px;
         cursor: pointer;
         &--insta {
-           @include sprite($icon-instagram);
+            @include sprite($icon-instagram);
         }
         &--vk {
-           @include sprite($icon-vk);
+            @include sprite($icon-vk);
         }
         &--fb {
-           @include sprite($icon-fb);
+            @include sprite($icon-fb);
         }
         &--twitter {
-           @include sprite($icon-twitter);
+            @include sprite($icon-twitter);
         }
     }
-    
     &__link {
-         display:  inline-block;
-         margin-top: 20px;
-         font-family: 'Lato-Regular', sans-serif;
-         font-size: 16px;
-        border-bottom:1px solid #aaabaa;
-        padding-bottom:2px;
-         color: #aaabaa;
+        display: inline-block;
+        margin-top: 20px;
+        font-family: 'Lato-Regular', sans-serif;
+        font-size: 16px;
+        border-bottom: 1px solid #aaabaa;
+        padding-bottom: 2px;
+        color: #aaabaa;
         //  text-align: right;
         display: inline-block;
-         transition: all .3s ease;
-         &:hover {
-             text-decoration: none;
-             color: #fff;
-         }
+        transition: all .3s ease;
+        &:hover {
+            text-decoration: none;
+            color: #fff;
+        }
     }
-    
     &__info {
         display: block;
         margin-left: 140px;
@@ -128,9 +127,9 @@ body {
             margin-top: 20px;
             position: relative;
             &:before {
-            position: absolute;
-            content: '';
-            @include sprite($icon-phone);
+                position: absolute;
+                content: '';
+                @include sprite($icon-phone);
                 left: -30px;
             }
         }
@@ -138,18 +137,17 @@ body {
             margin-top: 10px;
             position: relative;
             &:before {
-            position: absolute;
-            content: '';
-            @include sprite($icon-location);
+                position: absolute;
+                content: '';
+                @include sprite($icon-location);
                 left: -30px;
             }
         }
         &:hover {
-          color: #fff;
-          text-decoration: none;
+            color: #fff;
+            text-decoration: none;
         }
     }
-    
     &__title {
         font-family: 'Museo-Cyrl', sans-serif;
         // text-align: center;
@@ -159,14 +157,12 @@ body {
         letter-spacing: 2px;
         margin-top: 96px;
     }
-    
     &__subtitle {
-        font-family:  'Nautilus-Pompilius', sans-serif;
+        font-family: 'Nautilus-Pompilius', sans-serif;
         // text-align: center;
         font-size: 28px;
         color: #fff;
     }
-    
     &__button {
         font-family: 'Lato-Bold', sans-serif;
         font-size: 17px;
@@ -175,19 +171,18 @@ body {
         background-color: #27cbc0;
         border-style: none;
         padding: 22px 32px;
-        border-radius:  4px;
+        border-radius: 4px;
         margin-top: 60px;
         transition: all .3s ease;
         &:hover {
             background-color: #29d9cd;
-        } 
+        }
         &--howto {
-                padding: 18px 36px;
-                margin-top: 64px;
-                margin-right: 6px;
+            padding: 18px 36px;
+            margin-top: 64px;
+            margin-right: 6px;
         }
     }
-    
 }
 
 /* ------------------------------------
@@ -213,7 +208,7 @@ body {
     }
     &__car {
         margin-top: 30px;
-        color: #333;            
+        color: #333;
         display: block;
         span {
             display: block;
@@ -226,7 +221,7 @@ body {
         }
     }
     &__image {
-        background-size:  contain;
+        background-size: contain;
         height: 160px;
         &--limo {
             background: url(/assets/images/ourcars__limo-min.jpg) no-repeat center;
@@ -234,31 +229,31 @@ body {
         &--sedan {
             background: url(/assets/images/ourcars__sedan-min.jpg) no-repeat center;
         }
-       &--suv {
+        &--suv {
             background: url(/assets/images/ourcars__suv-min.jpg) no-repeat center;
         }
-       &--retro {
+        &--retro {
             background: url(/assets/images/ourcars__retro-min.jpg) no-repeat center;
-       }
-       &--cabriolet {
+        }
+        &--cabriolet {
             background: url(/assets/images/ourcars__cabriolet-min.jpg) no-repeat center;
-       }
-       &--exclusive {
+        }
+        &--exclusive {
             background: url(/assets/images/ourcars__exclusive-min.jpg) no-repeat center;
-       }
-       &--van {
+        }
+        &--van {
             background: url(/assets/images/ourcars__van-min.jpg) no-repeat center;
-       }
-       &--bus {
+        }
+        &--bus {
             background: url(/assets/images/ourcars__bus-min.jpg) no-repeat center;
-       }
+        }
     }
     &__subtitle {
         position: relative;
         display: block;
         font-family: 'Lato-Bold', sans-serif;
         font-size: 22px;
-        padding-top: 14px; 
+        padding-top: 14px;
         margin-top: 4px;
         margin-bottom: 4px;
         &:before {
@@ -268,17 +263,17 @@ body {
             width: 30%;
             top: 0;
             background-color: #27cbc0;
-        }      
+        }
     }
     &__border {
         margin-top: 40px;
         padding-bottom: 40px;
-        border:  1px solid transparent;
+        border: 1px solid transparent;
         border-radius: 2px;
         cursor: pointer;
         transition: all .3s ease-out;
         &:hover {
-            border:  1px solid rgba(170, 171, 170, .2);
+            border: 1px solid rgba(170, 171, 170, .2);
             box-shadow: 0px 0px 10px 0px rgba(170, 171, 170, .7);
         }
     }
@@ -288,9 +283,9 @@ body {
         text-transform: uppercase;
         background-color: #fff;
         color: #29d9cd;
-        border: 2px solid  #27cbc0;
-        padding:  18px 52px ;
-        border-radius:  4px;
+        border: 2px solid #27cbc0;
+        padding: 18px 52px;
+        border-radius: 4px;
         margin-top: 30px;
         margin-bottom: 100px;
         transition: all .3s ease;
@@ -298,12 +293,13 @@ body {
             background-color: #29d9cd;
             border-color: #29d9cd;
             color: #fff;
-        } 
-         &:focus {
-            outline: none; 
-         }
+        }
+        &:focus {
+            outline: none;
+        }
     }
 }
+
 
 /* ------------------------------------
     How to
@@ -313,13 +309,16 @@ body {
     &__left {
         &--bgc {
             background: url(/assets/images/howto__left-min.jpg) no-repeat center;
-            background-size:  cover;            
+            background-size: cover;
         }
-         height: 512px;
+        height: 512px;
     }
     &__right {
         margin-left: 44px;
         margin-top: 100px;
+        &--left {
+            margin-left: 0;
+        }
         &--bgc {
             height: 512px;
             background-color: #f2f2f2;
@@ -361,12 +360,12 @@ body {
         font-family: 'Museo-Cyrl', sans-serif;
         font-size: 40px;
         margin-bottom: 100px;
-        &--driver{
+        &--driver {
             text-align: left;
         }
     }
     &__button {
-         font-family: 'Lato-Bold', sans-serif;
+        font-family: 'Lato-Bold', sans-serif;
         font-size: 16px;
         text-transform: uppercase;
         background-color: #fff;
@@ -394,23 +393,157 @@ body {
             width: 2px;
             background-color: #29d9cd;
             top: 32px;
-            right:14px;
+            right: 14px;
         }
-       &--none {
-           position: relative;
-           &:after {
-            content: none;   
-           }
-       }
+        &--none {
+            position: relative;
+            &:after {
+                content: none;
+            }
+        }
     }
-    
     &__driver {
         &--bgc {
             background: url(/assets/images/howto__right-min.jpg) no-repeat center;
-            background-size:  cover;            
+            background-size: cover;
         }
-         height: 512px;
+        height: 512px;
     }
+}
+
+
+/* ------------------------------------
+    Popular Cars  Styles
+------------------------------------- */
+
+.popularcars {
+    margin-bottom: 120px;
+    &__title {
+        margin-top: 96px;
+        margin-bottom: 92px;
+        font-size: 40px;
+        text-align: center;
+        font-family: 'Museo-Cyrl', sans-serif;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 64%;
+            bottom: -14px;
+            background-color: #27cbc0;
+        }
+        &--about {
+            margin-bottom: 60px;
+        }
+    }
+}
+
+
+.slick-next {
+  background-image: url('/assets/images/icon__right.png');
+  background-repeat: no-repeat;
+  height: 34px;
+  width: 18px;
+  right: -40px;
+  &:before {
+      content: none;
+  }
+  &:hover, &:focus {
+      background-image: url('/assets/images/icon__right.png');
+  }
+}
+
+.slick-prev{
+  background-image: url('/assets/images/icon__left.png');
+  background-repeat: no-repeat;
+  height: 34px;
+  width: 18px;
+  left: -40px;
+  &:before {
+   content: none;   
+  }
+  &:hover, &:focus {
+      background-image: url('/assets/images/icon__left.png');
+  }
+}
+
+.slider {
+    
+    &__info {
+        width: 270px;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    &__image {
+        height: 200px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    &__star {
+        &:before {
+            // margin: 4px;
+            font-size: 16px;
+            font-family: FontAwesome;
+            display: inline-block;
+            content: "\f006"; 
+            color: #ddd;
+        }
+        &--full {
+            &:before {
+                color: #f3cc49;
+            }
+        }
+        // &--half {
+        //     &:before {
+        //         content: "\f089";
+        //         position: absolute;
+        //     }
+        // }
+    }
+    
+    &__title {
+        font-size: 20px;
+        font-family: 'Lato-Bold', sans-serif;
+        color: #333;
+    }
+    
+    &__rating {
+        font-size: 'Lato-Regular', sans-serif;
+        font-size: 16px;
+        color: #808080;
+    }
+    
+    &__more {
+        font-size: 16px;
+        font-family: 'Lato-Regular', sans-serif;
+        color: #27cbc0;
+    }
+    
+}
+
+/* ------------------------------------
+    About Styles
+------------------------------------- */
+
+.about {
+    
+    height: 534px;
+    
+    &__info {
+        font-size: 18px;
+        font-family: 'Lato-Regular', sans-serif;
+        text-align: center;
+        margin-left: 10px;
+    }
+    
+    &--bgc {
+        background-color: #f2f2f2;
+    }
+    
+    
 }
 
 /* ------------------------------------
@@ -418,6 +551,13 @@ body {
 ------------------------------------- */
 
 .footer {
-    height: 200px;
+    height: 82px;
     margin-top: 100px;
+    background-color: #2e3333;
+    &__info {
+        margin-top: 30px;
+        font-size: 16px;
+        font-family: 'Lato-Regular',sans-serif;
+        color: #646565;
+    }
 }
