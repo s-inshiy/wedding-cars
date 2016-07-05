@@ -1,0 +1,12 @@
+@media screen and (max-width:1466px) {
+  .howto {
+    &__step {
+      font-size: 16px;
+    }
+    &__right{
+      &--left {
+        margin-left: 10%;
+      }
+    }
+  }
+} 

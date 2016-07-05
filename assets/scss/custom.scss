@@ -150,7 +150,6 @@ body {
     }
     &__title {
         font-family: 'Museo-Cyrl', sans-serif;
-        // text-align: center;
         font-weight: bold;
         color: #fff;
         font-size: 60px;
@@ -159,7 +158,6 @@ body {
     }
     &__subtitle {
         font-family: 'Nautilus-Pompilius', sans-serif;
-        // text-align: center;
         font-size: 28px;
         color: #fff;
     }
@@ -300,7 +298,6 @@ body {
     }
 }
 
-
 /* ------------------------------------
     How to
 ------------------------------------- */
@@ -317,7 +314,7 @@ body {
         margin-left: 44px;
         margin-top: 100px;
         &--left {
-            margin-left: 0;
+            margin-left: 23%;
         }
         &--bgc {
             height: 512px;
@@ -340,6 +337,11 @@ body {
             background-color: #29d9cd;
             right: -17%;
             top: 32px;
+        }
+        &--right {
+            &:after{
+                left: -17%;
+            }
         }
     }
     &__wrapper {
@@ -411,7 +413,6 @@ body {
     }
 }
 
-
 /* ------------------------------------
     Popular Cars  Styles
 ------------------------------------- */
@@ -436,59 +437,67 @@ body {
         &--about {
             margin-bottom: 60px;
         }
+        &--question {
+            margin-bottom: 50px;
+        }
+        &--contact {
+            margin-top: 90px;
+            margin-bottom: 64px;
+            text-align: left;
+            width: 200px;
+            &:before {
+                width: 90%;
+            }
+        }
     }
 }
 
-
 .slick-next {
-  background-image: url('/assets/images/icon__right.png');
-  background-repeat: no-repeat;
-  height: 34px;
-  width: 18px;
-  right: -40px;
-  &:before {
-      content: none;
-  }
-  &:hover, &:focus {
-      background-image: url('/assets/images/icon__right.png');
-  }
+    @include sprite($icon-right);    
+    height: 34px;
+    width: 18px;
+    right: -40px;
+    &:before {
+        content: none;
+    }
+    &:hover,
+    &:focus {
+        @include sprite($icon-right);    
+    }
 }
 
-.slick-prev{
-  background-image: url('/assets/images/icon__left.png');
-  background-repeat: no-repeat;
-  height: 34px;
-  width: 18px;
-  left: -40px;
-  &:before {
-   content: none;   
-  }
-  &:hover, &:focus {
-      background-image: url('/assets/images/icon__left.png');
-  }
+.slick-prev {
+    @include sprite($icon-left);    
+    height: 34px;
+    width: 18px;
+    left: -40px;
+    &:before {
+        content: none;
+    }
+    &:hover,
+    &:focus {
+        @include sprite($icon-left);    
+    }
 }
 
 .slider {
-    
     &__info {
         width: 270px;
         margin: 0 auto;
         display: block;
     }
-    
     &__image {
         height: 200px;
         background-repeat: no-repeat;
         background-position: center;
     }
-    
     &__star {
         &:before {
             // margin: 4px;
             font-size: 16px;
             font-family: FontAwesome;
             display: inline-block;
-            content: "\f006"; 
+            content: "\f006";
             color: #ddd;
         }
         &--full {
@@ -503,25 +512,21 @@ body {
         //     }
         // }
     }
-    
     &__title {
         font-size: 20px;
         font-family: 'Lato-Bold', sans-serif;
         color: #333;
     }
-    
     &__rating {
         font-size: 'Lato-Regular', sans-serif;
         font-size: 16px;
         color: #808080;
     }
-    
     &__more {
         font-size: 16px;
         font-family: 'Lato-Regular', sans-serif;
         color: #27cbc0;
     }
-    
 }
 
 /* ------------------------------------
@@ -529,21 +534,173 @@ body {
 ------------------------------------- */
 
 .about {
-    
     height: 534px;
-    
     &__info {
         font-size: 18px;
         font-family: 'Lato-Regular', sans-serif;
         text-align: center;
         margin-left: 10px;
+        margin-bottom: 50px;
     }
-    
     &--bgc {
         background-color: #f2f2f2;
     }
-    
-    
+}
+
+.benefit {
+    text-align: center;
+    &__image {
+        margin-bottom: 20px;
+    }
+    &__title {
+        font-family: 'Lato-Bold', sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+    &__info {
+        font-family: 'Lato-Regular', sans-serif;
+        font-size: 16px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+}
+
+/* ------------------------------------
+    Question Styles
+------------------------------------- */
+
+.question {
+    margin-bottom: 100px;
+    text-align: center;
+    &__subtitle {
+        font-family: 'Nautilus-Pompilius', sans-serif;
+        font-size: 28px;
+        color: #808080;
+        // margin-bottom: 120px;
+    }
+    &__form {
+        margin: 60px 68px 30px 72px;
+        text-align: left;
+    }
+    &__button {
+        font-size: 18px;
+        font-family: 'Lato-Bold', sans-serif;
+        text-transform: uppercase;
+        padding: 18px 32px;
+        background-color: #27cbc0;
+        border: none;
+        background-image: none;
+        color: #fff;
+        transition: all .3s ease;
+        &:hover {
+           background-color: #29d9cd;
+           color: #fff;
+        }
+    }
+}
+
+.form-control {
+    height: 48px;
+    border-color: #d2d2d2;
+    padding-left: 48px;
+    padding-top: 10px;
+    font-family: 'Lato-Regular', sans-serif;
+    font-size: 16px;
+    &:focus {
+        border-color: #27cbc0;
+    }
+}
+
+.form-group {
+    margin-bottom: 34px;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        @include sprite($icon-name);
+        margin: 14px;
+    }
+    &--phone {
+        &:before {
+            @include sprite($icon-phone);    
+        }
+    }
+    &--textarea {
+        &:before {
+            @include sprite($icon-question);    
+        }
+        margin-bottom: 32px;
+    }
+}
+
+/* ------------------------------------
+    Contact Styles
+------------------------------------- */
+
+.contact {
+    font-family: 'Lato-Regular', sans-serif;
+    font-size: 20px;
+    color: #555;
+    letter-spacing: 1.1px;
+    &__map {
+        background-image:  url(/assets/images/contact__map.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 539px;
+    }
+    &__info {
+        margin-left: 28px;
+    }
+    &__phone {
+        display: block;
+        margin-top: 12px;
+        color: #555;
+        position: relative;
+        padding-left: 30px;
+        transition: all .3s ease;
+        &:before {
+            position: absolute;
+            content: '';
+            @include sprite($icon-phone);
+            left: 0px;
+            top:6px;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__email {
+        display: block;
+        margin-top: 12px;
+        color: #555;
+        position: relative;
+        padding-left: 30px;
+        transition: all .3s ease;
+        &:before {
+            position: absolute;
+            content: '';
+            @include sprite($icon-letter);
+            left: 0px;
+            top:6px;
+        }
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__social {
+        letter-spacing: 1.2px;
+        margin-top: 34px;
+        margin-bottom: -6px;
+        font-size: 16px;
+        display: block;
+    }
+    &__bgc{
+         background-color: #f2f2f2;
+         padding-bottom: 94px;
+    }
 }
 
 /* ------------------------------------
@@ -552,12 +709,12 @@ body {
 
 .footer {
     height: 82px;
-    margin-top: 100px;
+    // margin-top: 100px;
     background-color: #2e3333;
     &__info {
         margin-top: 30px;
         font-size: 16px;
-        font-family: 'Lato-Regular',sans-serif;
+        font-family: 'Lato-Regular', sans-serif;
         color: #646565;
     }
 }

@@ -324,7 +324,7 @@ body {
   margin-left: 44px;
   margin-top: 100px; }
   .howto__right--left {
-    margin-left: 0; }
+    margin-left: 23%; }
   .howto__right--bgc {
     height: 512px;
     background-color: #f2f2f2; }
@@ -345,6 +345,8 @@ body {
     background-color: #29d9cd;
     right: -17%;
     top: 32px; }
+  .howto__title--right:after {
+    left: -17%; }
 
 .howto__wrapper {
   text-align: right;
@@ -428,28 +430,47 @@ body {
       background-color: #27cbc0; }
     .popularcars__title--about {
       margin-bottom: 60px; }
+    .popularcars__title--question {
+      margin-bottom: 50px; }
+    .popularcars__title--contact {
+      margin-top: 90px;
+      margin-bottom: 64px;
+      text-align: left;
+      width: 200px; }
+      .popularcars__title--contact:before {
+        width: 90%; }
 
 .slick-next {
-  background-image: url("/assets/images/icon__right.png");
-  background-repeat: no-repeat;
+  background-image: url(/assets/sprites/sprite.png);
+  background-position: -68px -52px;
+  width: 19px;
+  height: 34px;
   height: 34px;
   width: 18px;
   right: -40px; }
   .slick-next:before {
     content: none; }
   .slick-next:hover, .slick-next:focus {
-    background-image: url("/assets/images/icon__right.png"); }
+    background-image: url(/assets/sprites/sprite.png);
+    background-position: -68px -52px;
+    width: 19px;
+    height: 34px; }
 
 .slick-prev {
-  background-image: url("/assets/images/icon__left.png");
-  background-repeat: no-repeat;
+  background-image: url(/assets/sprites/sprite.png);
+  background-position: -87px -52px;
+  width: 19px;
+  height: 34px;
   height: 34px;
   width: 18px;
   left: -40px; }
   .slick-prev:before {
     content: none; }
   .slick-prev:hover, .slick-prev:focus {
-    background-image: url("/assets/images/icon__left.png"); }
+    background-image: url(/assets/sprites/sprite.png);
+    background-position: -87px -52px;
+    width: 19px;
+    height: 34px; }
 
 .slider__info {
   width: 270px;
@@ -495,19 +516,158 @@ body {
     font-size: 18px;
     font-family: 'Lato-Regular', sans-serif;
     text-align: center;
-    margin-left: 10px; }
+    margin-left: 10px;
+    margin-bottom: 50px; }
   .about--bgc {
     background-color: #f2f2f2; }
+
+.benefit {
+  text-align: center; }
+  .benefit__image {
+    margin-bottom: 20px; }
+  .benefit__title {
+    font-family: 'Lato-Bold', sans-serif;
+    font-size: 20px;
+    text-align: center; }
+  .benefit__info {
+    font-family: 'Lato-Regular', sans-serif;
+    font-size: 16px;
+    margin-right: 50px;
+    margin-left: 50px; }
+
+/* ------------------------------------
+    Question Styles
+------------------------------------- */
+.question {
+  margin-bottom: 100px;
+  text-align: center; }
+  .question__subtitle {
+    font-family: 'Nautilus-Pompilius', sans-serif;
+    font-size: 28px;
+    color: #808080; }
+  .question__form {
+    margin: 60px 68px 30px 72px;
+    text-align: left; }
+  .question__button {
+    font-size: 18px;
+    font-family: 'Lato-Bold', sans-serif;
+    text-transform: uppercase;
+    padding: 18px 32px;
+    background-color: #27cbc0;
+    border: none;
+    background-image: none;
+    color: #fff;
+    transition: all .3s ease; }
+    .question__button:hover {
+      background-color: #29d9cd;
+      color: #fff; }
+
+.form-control {
+  height: 48px;
+  border-color: #d2d2d2;
+  padding-left: 48px;
+  padding-top: 10px;
+  font-family: 'Lato-Regular', sans-serif;
+  font-size: 16px; }
+  .form-control:focus {
+    border-color: #27cbc0; }
+
+.form-group {
+  margin-bottom: 34px;
+  position: relative; }
+  .form-group:before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(/assets/sprites/sprite.png);
+    background-position: -22px -93px;
+    width: 21px;
+    height: 21px;
+    margin: 14px; }
+  .form-group--phone:before {
+    background-image: url(/assets/sprites/sprite.png);
+    background-position: -17px -114px;
+    width: 19px;
+    height: 19px; }
+  .form-group--textarea {
+    margin-bottom: 32px; }
+    .form-group--textarea:before {
+      background-image: url(/assets/sprites/sprite.png);
+      background-position: 0px -93px;
+      width: 22px;
+      height: 21px; }
+
+/* ------------------------------------
+    Contact Styles
+------------------------------------- */
+.contact {
+  font-family: 'Lato-Regular', sans-serif;
+  font-size: 20px;
+  color: #555;
+  letter-spacing: 1.1px; }
+  .contact__map {
+    background-image: url(/assets/images/contact__map.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 539px; }
+  .contact__info {
+    margin-left: 28px; }
+  .contact__phone {
+    display: block;
+    margin-top: 12px;
+    color: #555;
+    position: relative;
+    padding-left: 30px;
+    transition: all .3s ease; }
+    .contact__phone:before {
+      position: absolute;
+      content: '';
+      background-image: url(/assets/sprites/sprite.png);
+      background-position: -17px -114px;
+      width: 19px;
+      height: 19px;
+      left: 0px;
+      top: 6px; }
+    .contact__phone:hover {
+      text-decoration: none; }
+  .contact__email {
+    display: block;
+    margin-top: 12px;
+    color: #555;
+    position: relative;
+    padding-left: 30px;
+    transition: all .3s ease; }
+    .contact__email:before {
+      position: absolute;
+      content: '';
+      background-image: url(/assets/sprites/sprite.png);
+      background-position: -93px -93px;
+      width: 21px;
+      height: 15px;
+      left: 0px;
+      top: 6px; }
+    .contact__email:hover {
+      text-decoration: none; }
+  .contact__social {
+    letter-spacing: 1.2px;
+    margin-top: 34px;
+    margin-bottom: -6px;
+    font-size: 16px;
+    display: block; }
+  .contact__bgc {
+    background-color: #f2f2f2;
+    padding-bottom: 94px; }
 
 /* ------------------------------------
     Footer Styles
 ------------------------------------- */
 .footer {
   height: 82px;
-  margin-top: 100px;
   background-color: #2e3333; }
   .footer__info {
     margin-top: 30px;
     font-size: 16px;
-    font-family: 'Lato-Regular',sans-serif;
+    font-family: 'Lato-Regular', sans-serif;
     color: #646565; }

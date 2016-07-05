@@ -1,0 +1,5 @@
+@media screen and (max-width: 1466px) {
+  .howto__step {
+    font-size: 16px; }
+  .howto__right--left {
+    margin-left: 10%; } }
