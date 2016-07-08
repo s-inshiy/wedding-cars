@@ -1,23 +1,50 @@
 $(function() {
 
   //  Slick Slider
-  jQuery('.slider').slick({
+  $('.slider').slick({
     infinite: true,
     slidesToShow: 4,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    responsive: [{
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          // dots: true
+        }
+      }, {
+        breakpoint: 1070,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          arrows: false
+        }
+      }, {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
   });
 
   //  Input, Textarea
-  jQuery("input,textarea").each(function() {
-    jQuery(this).data('holder', jQuery(this).attr('placeholder'));
+  $("input,textarea").each(function() {
+    $(this).data('holder', $(this).attr('placeholder'));
 
-    jQuery(this).focusin(function() {
-      jQuery(this).attr('placeholder', '');
+    $(this).focusin(function() {
+      $(this).attr('placeholder', '');
     });
 
-    jQuery(this).focusout(function() {
-      jQuery(this).attr('placeholder', jQuery(this).data('holder'));
+    $(this).focusout(function() {
+      $(this).attr('placeholder', $(this).data('holder'));
     });
   });
+
+	$('#nav-icon1').click(function(){
+		$(this).toggleClass('open');
+	});
 
 });

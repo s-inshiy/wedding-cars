@@ -59,6 +59,9 @@ The `sprites` mixin generates identical output to the CSS template
   font-family: 'Nautilus-Pompilius';
   src: url("/assets/fonts/nautiluspompilius.ttf") format("truetype"); }
 
+* {
+  outline: 0; }
+
 body {
   min-width: 320px; }
 
@@ -100,120 +103,116 @@ body {
 /* ------------------------------------
     Header Styles
 ------------------------------------- */
-.header--bgc {
-  background: url(/assets/images/header__bgc-min.jpg) no-repeat center;
-  background-size: cover;
-  height: 750px; }
-
-.header__logo {
-  display: inline-block;
-  margin-top: 20px;
-  margin-bottom: 14px; }
-
-.header__icon {
-  display: inline-block;
-  margin-top: 20px;
-  margin-right: 20px;
-  cursor: pointer; }
-  .header__icon--insta {
-    background-image: url(/assets/sprites/sprite.png);
-    background-position: -36px -114px;
-    width: 19px;
-    height: 19px; }
-  .header__icon--vk {
-    background-image: url(/assets/sprites/sprite.png);
-    background-position: -67px -93px;
-    width: 26px;
-    height: 15px; }
-  .header__icon--fb {
-    background-image: url(/assets/sprites/sprite.png);
-    background-position: -106px -52px;
-    width: 12px;
-    height: 23px; }
-  .header__icon--twitter {
-    background-image: url(/assets/sprites/sprite.png);
-    background-position: -43px -93px;
-    width: 24px;
-    height: 18px; }
-
-.header__link {
-  display: inline-block;
-  margin-top: 20px;
-  font-family: 'Lato-Regular', sans-serif;
-  font-size: 16px;
-  border-bottom: 1px solid #aaabaa;
-  padding-bottom: 2px;
-  color: #aaabaa;
-  display: inline-block;
+.header {
   transition: all .3s ease; }
-  .header__link:hover {
-    text-decoration: none;
-    color: #fff; }
-
-.header__info {
-  display: block;
-  margin-left: 140px;
-  font-family: 'Lato-Regular', sans-serif;
-  font-size: 16px;
-  color: #aaabaa;
-  transition: all .3s ease;
-  text-align: left; }
-  .header__info--phone {
+  .header--bgc {
+    background: url(/assets/images/header__bgc-min.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 750px; }
+  .header__logo {
+    display: inline-block;
     margin-top: 20px;
-    position: relative; }
-    .header__info--phone:before {
-      position: absolute;
-      content: '';
+    margin-bottom: 14px; }
+  .header__icon {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer; }
+    .header__icon--insta {
       background-image: url(/assets/sprites/sprite.png);
-      background-position: -17px -114px;
+      background-position: -36px -114px;
       width: 19px;
-      height: 19px;
-      left: -30px; }
-  .header__info--marker {
-    margin-top: 10px;
-    position: relative; }
-    .header__info--marker:before {
-      position: absolute;
-      content: '';
+      height: 19px; }
+    .header__icon--vk {
       background-image: url(/assets/sprites/sprite.png);
-      background-position: 0px -114px;
-      width: 17px;
-      height: 23px;
-      left: -30px; }
-  .header__info:hover {
+      background-position: -67px -93px;
+      width: 26px;
+      height: 15px; }
+    .header__icon--fb {
+      background-image: url(/assets/sprites/sprite.png);
+      background-position: -106px -52px;
+      width: 12px;
+      height: 23px; }
+    .header__icon--twitter {
+      background-image: url(/assets/sprites/sprite.png);
+      background-position: -43px -93px;
+      width: 24px;
+      height: 18px; }
+  .header__link {
+    display: inline-block;
+    margin-top: 20px;
+    font-family: 'Lato-Regular', sans-serif;
+    font-size: 16px;
+    border-bottom: 1px solid #aaabaa;
+    padding-bottom: 2px;
+    color: #aaabaa;
+    display: inline-block;
+    transition: all .3s ease; }
+    .header__link:hover {
+      text-decoration: none;
+      color: #fff; }
+  .header__info {
+    display: block;
+    margin-left: 140px;
+    font-family: 'Lato-Regular', sans-serif;
+    font-size: 16px;
+    color: #aaabaa;
+    transition: all .3s ease;
+    text-align: left; }
+    .header__info--phone {
+      margin-top: 20px;
+      position: relative; }
+      .header__info--phone:before {
+        position: absolute;
+        content: '';
+        background-image: url(/assets/sprites/sprite.png);
+        background-position: -17px -114px;
+        width: 19px;
+        height: 19px;
+        left: -30px; }
+    .header__info--marker {
+      margin-top: 10px;
+      position: relative; }
+      .header__info--marker:before {
+        position: absolute;
+        content: '';
+        background-image: url(/assets/sprites/sprite.png);
+        background-position: 0px -114px;
+        width: 17px;
+        height: 23px;
+        left: -30px; }
+    .header__info:hover {
+      color: #fff;
+      text-decoration: none; }
+  .header__title {
+    font-family: 'Museo-Cyrl', sans-serif;
+    font-weight: bold;
     color: #fff;
-    text-decoration: none; }
-
-.header__title {
-  font-family: 'Museo-Cyrl', sans-serif;
-  font-weight: bold;
-  color: #fff;
-  font-size: 60px;
-  letter-spacing: 2px;
-  margin-top: 96px; }
-
-.header__subtitle {
-  font-family: 'Nautilus-Pompilius', sans-serif;
-  font-size: 28px;
-  color: #fff; }
-
-.header__button {
-  font-family: 'Lato-Bold', sans-serif;
-  font-size: 17px;
-  color: #fff;
-  text-transform: uppercase;
-  background-color: #27cbc0;
-  border-style: none;
-  padding: 22px 32px;
-  border-radius: 4px;
-  margin-top: 60px;
-  transition: all .3s ease; }
-  .header__button:hover {
-    background-color: #29d9cd; }
-  .header__button--howto {
-    padding: 18px 36px;
-    margin-top: 64px;
-    margin-right: 6px; }
+    font-size: 60px;
+    letter-spacing: 2px;
+    margin-top: 96px; }
+  .header__subtitle {
+    font-family: 'Nautilus-Pompilius', sans-serif;
+    font-size: 28px;
+    color: #fff; }
+  .header__button {
+    font-family: 'Lato-Bold', sans-serif;
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #27cbc0;
+    border-style: none;
+    padding: 22px 32px;
+    border-radius: 4px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    transition: all .3s ease; }
+    .header__button:hover {
+      background-color: #29d9cd; }
+    .header__button--howto {
+      padding: 18px 36px;
+      margin-top: 64px;
+      margin-right: 6px; }
 
 /* ------------------------------------
     Our Cars Styles
@@ -221,9 +220,9 @@ body {
 .ourcars__title {
   margin-top: 90px;
   margin-bottom: 60px;
-  text-align: center;
   font-size: 40px;
   font-family: 'Museo-Cyrl', sans-serif;
+  display: inline-block;
   position: relative; }
   .ourcars__title:before {
     position: absolute;
@@ -418,14 +417,14 @@ body {
     margin-top: 96px;
     margin-bottom: 92px;
     font-size: 40px;
-    text-align: center;
+    display: inline-block;
     font-family: 'Museo-Cyrl', sans-serif;
     position: relative; }
     .popularcars__title:before {
       content: '';
       position: absolute;
       height: 2px;
-      width: 64%;
+      width: 100%;
       bottom: -14px;
       background-color: #27cbc0; }
     .popularcars__title--about {
@@ -438,7 +437,7 @@ body {
       text-align: left;
       width: 200px; }
       .popularcars__title--contact:before {
-        width: 90%; }
+        width: 100%; }
 
 .slick-next {
   background-image: url(/assets/sprites/sprite.png);
@@ -544,7 +543,8 @@ body {
   .question__subtitle {
     font-family: 'Nautilus-Pompilius', sans-serif;
     font-size: 28px;
-    color: #808080; }
+    color: #808080;
+    display: block; }
   .question__form {
     margin: 60px 68px 30px 72px;
     text-align: left; }
@@ -568,7 +568,8 @@ body {
   padding-left: 48px;
   padding-top: 10px;
   font-family: 'Lato-Regular', sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  transition: all .3s ease; }
   .form-control:focus {
     border-color: #27cbc0; }
 
@@ -614,6 +615,8 @@ body {
     height: 539px; }
   .contact__info {
     margin-left: 28px; }
+    .contact__info span {
+      display: block; }
   .contact__phone {
     display: block;
     margin-top: 12px;

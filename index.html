@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-  <title>Browser-Sync Starter</title>
+  <title>Wedding Cars</title>
 
   <!-- Bootstrap 3 -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -42,16 +42,16 @@
   <section class="header header--bgc">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3  col-sm-3 col-sm-push-4 col-xs-12 hidden-xs text-right ">
+          <img src="/assets/images/header__logo-min.png" class="header__logo" alt="logo">
+        </div>
+        <div class="col-md-4  col-sm-4 col-sm-pull-3 hidden-xs">
           <a href="#" class="header__icon header__icon--vk"></a>
           <a href="#" class="header__icon header__icon--fb"></a>
           <a class="header__icon header__icon--insta"></a>
           <a href="#" class="header__icon header__icon--twitter"></a>
         </div>
-        <div class="col-md-3 text-right">
-          <img src="/assets/images/header__logo-min.png" class="header__logo" alt="logo">
-        </div>
-        <div class="col-md-3">
+        <div class="col-sm-3 hidden-xs">
           <a href="tel:0532-12-34-56" class="header__info header__info--phone">
               (0532)12-34-56
             </a>
@@ -59,33 +59,41 @@
                Полтава
             </a>
         </div>
-        <div class="col-md-2 text-right">
+        <div class="col-md-2 col-sm-2 col-xs-12 text-right hidden-xs">
           <a href="#" class="header__link">Вход/</a>
           <a href="#" class="header__link">Регистрация</a>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-offset-1 col-md-10">
+        <div class="col-lg-offset-1 col-lg-10">
           <nav class="navbar navbar-default">
             <div class="container-fluid">
               <!-- Brand and toggle get grouped for better mobile display -->
               <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                <button type="button" class="navbar-toggle collapsed" id="nav-icon1" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                   </button>
               </div>
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav text-center">
+                  <img src="/assets/images/header__logo-min.png" class="header__logo  hidden-sm  hidden-md  hidden-lg" alt="logo">
                   <li class="active"><a href="#"> Главная <span class="sr-only">(current)</span></a></li>
                   <li><a href="#">Авто</a></li>
                   <li><a href="#">Как заказать</a></li>
                   <li><a href="#">Водителям</a></li>
                   <li><a href="#">О компании</a></li>
                   <li><a href="#">Контакты</a></li>
+                  <div class="nav__social hidden-sm  hidden-md  hidden-lg">
+                    <a href="#" class="header__icon header__icon--vk"></a>
+                    <a href="#" class="header__icon header__icon--fb"></a>
+                    <a class="header__icon header__icon--insta"></a>
+                    <a href="#" class="header__icon header__icon--twitter"></a>                    
+                  </div>
+                  <a href="#" class="header__link hidden-sm  hidden-md  hidden-lg">Вход/</a>
+                  <a href="#" class="header__link hidden-sm  hidden-md  hidden-lg">Регистрация</a>
                 </ul>
               </div>
               <!-- /.navbar-collapse -->
@@ -97,7 +105,7 @@
       <div class="row">
         <div class="col-md-offset-2 col-md-8 text-center">
           <h1 class="header__title">
-              Прокат свадебных автомобилей в Полтаве
+              Прокат свадебных автомобилей  в Полтаве
            </h1>
           <h3 class="header__subtitle">
               Подберите себе автомобиль по цене oт 250 грн/час
@@ -113,12 +121,12 @@
   <section class="ourcars ourcars--bgc">
     <div class="container">
       <div class="row">
-        <div class="col-md-offset-4 col-md-4">
+        <div class="col-lg-offset-4 col-lg-4 col-md-offset-2 col-md-8 text-center">
           <h3 class="ourcars__title">Наши автомобили</h3>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-3 ourcars__border">
+        <div class="col-lg-3 col-md-4 col-sm-6 ourcars__border">
           <a href="#" class="ourcars__car">
             <div class="ourcars__image ourcars__image--limo" alt="car"></div>
             <h3 class="ourcars__subtitle">Лимузины</h3>
@@ -126,7 +134,7 @@
             <span>от 400 грн/час</span>
           </a>
         </div>
-        <div class="col-md-3 ourcars__border">
+        <div class="col-lg-3 col-md-4 col-sm-6 ourcars__border">
           <a href="#" class="ourcars__car">
             <div class="ourcars__image ourcars__image--sedan" alt="car"></div>
             <h3 class="ourcars__subtitle">Седаны</h3>
@@ -134,7 +142,7 @@
             <span>от 250 грн/час</span>
           </a>
         </div>
-        <div class="col-md-3 ourcars__border">
+        <div class="col-lg-3 col-md-4 col-sm-6 ourcars__border">
           <a href="#" class="ourcars__car">
             <div class="ourcars__image ourcars__image--suv" alt="car"></div>
             <h3 class="ourcars__subtitle">Внедорожники</h3>
@@ -142,7 +150,7 @@
             <span>от 300 грн/час</span>
           </a>
         </div>
-        <div class="col-md-3 ourcars__border">
+        <div class="col-lg-3 col-md-4 col-sm-6 ourcars__border">
           <a href="#" class="ourcars__car">
             <div class="ourcars__image ourcars__image--retro" alt="car"></div>
             <h3 class="ourcars__subtitle">Ретро-авто</h3>
@@ -150,7 +158,7 @@
             <span>от 350 грн/час</span>
           </a>
         </div>
-        <div class="col-md-3 ourcars__border">
+        <div class="col-lg-3 col-md-4 col-sm-6 ourcars__border">
           <a href="#" class="ourcars__car">
             <div class="ourcars__image ourcars__image--cabriolet" alt="car"></div>
             <h3 class="ourcars__subtitle">Кабриолеты</h3>
@@ -158,7 +166,7 @@
             <span>от 250 грн/час</span>
           </a>
         </div>
-        <div class="col-md-3 ourcars__border">
+        <div class="col-lg-3 col-md-4 col-sm-6 ourcars__border">
           <a href="#" class="ourcars__car">
             <div class="ourcars__image ourcars__image--exclusive" alt="car"></div>
             <h3 class="ourcars__subtitle">Экслюзивные авто</h3>
@@ -166,7 +174,7 @@
             <span>от 450 грн/час</span>
           </a>
         </div>
-        <div class="col-md-3 ourcars__border">
+        <div class="col-lg-3 col-md-4 col-sm-6 ourcars__border">
           <a href="#" class="ourcars__car">
             <div class="ourcars__image ourcars__image--van" alt="car"></div>
             <h3 class="ourcars__subtitle">Микроавтобусы</h3>
@@ -174,7 +182,7 @@
             <span>от 500 грн/час</span>
           </a>
         </div>
-        <div class="col-md-3 ourcars__border">
+        <div class="col-lg-3 col-md-4 col-sm-6 ourcars__border">
           <a href="#" class="ourcars__car">
             <div class="ourcars__image ourcars__image--bus" alt="car"></div>
             <h3 class="ourcars__subtitle">Автобусы</h3>
@@ -259,7 +267,7 @@
   <section class="popularcars">
     <div class="container">
       <div class="row">
-        <div class="col-md-offset-2 col-md-8">
+        <div class="col-md-offset-2 col-md-8 text-center">
           <h3 class="popularcars__title">
                       Популярные автомобили
                   </h3>
@@ -359,7 +367,7 @@
   <section class="about about--bgc">
     <div class="container">
       <div class="row">
-        <div class="col-md-offset-2 col-md-8">
+        <div class="col-md-offset-2 col-md-8 text-center">
           <h3 class="popularcars__title popularcars__title--about">
                       О компании WeddingCars
                   </h3>
@@ -413,7 +421,7 @@
   <section class="question">
     <div class="container">
       <div class="row">
-        <div class="col-md-offset-3 col-md-6">
+        <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 text-center">
           <h3 class="popularcars__title popularcars__title--question">
                         Остались вопросы?
                     </h3>
