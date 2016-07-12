@@ -3,64 +3,187 @@
     &__step {
       font-size: 16px;
     }
-    &__right{
+    &__right {
       &--left {
         margin-left: 10%;
       }
     }
   }
-} 
+}
 
 @media screen and (max-width:1200px) {
-  .header{
+  .header {
     &__info {
       margin-left: 100px;
     }
   }
+  .howto {
+    &__right {
+      &--left {
+        margin-left: 0;
+      }
+    }
+    &__step {
+      font-size: 15px;
+    }
+  }
+  .nav>li>a {
+    padding: 16px 32px;
+  }
 }
 
 // Tablet
-@media screen and (min-width:767px) and (max-width:991px) { 
-      .nav>li>a {
-        padding: 15px 16px;
+@media screen and (min-width:767px) and (max-width:991px) {
+  .nav>li>a {
+    padding: 15px;
+  }
+  .header {
+    &__title {
+      font-size: 56px;
+    }
+    &__info {
+      margin-left: 80px;
+    }
+  }
+  .howto {
+    &__right {
+      margin-top: 0;
+      padding-top: 100px;
+      padding-bottom: 30px;
+      &--left {
+        margin-left: 44px;
       }
-      .header {
-        &__title {
-          font-size: 56px;
-        }
+    }
+    &__title {
+      &:after {
+        content: none;
       }
-} 
+    }
+  }
+  .about {
+    min-height: 580px;
+  }
+  .popularcars {
+    &__title {
+      margin-top: 70px;
+    }
+  }
+}
 
+//Mobile 
 @media screen and (max-width:767px) {
-  
   .navbar-default {
     border: none;
     background-color: rgba(46, 51, 51, .8);
   }
-  
-.navbar-default .navbar-nav>li>a {
-  text-align: center;
-}
-  
+  .navbar-default .navbar-nav>li>a {
+    text-align: center;
+  }
   .header {
-    .text-right{
+    .text-right {
       text-align: center;
     }
     &__link {
       margin-bottom: 36px;
     }
     &__title {
-      font-size: 52px;
+      font-size: 40px;
+    }
+    &__info {
+      margin-left: 80px;
     }
   }
-  
+  .popularcars {
+    &__title {
+      font-size: 36px;
+    }
+  }
+  .howto {
+    &__right {
+      margin-top: 0;
+      padding-top: 60px;
+      padding-bottom: 30px;
+      margin-left: 0;
+      &--left {
+        // margin-left: 44px;
+        margin-left: 0;
+      }
+    }
+    &__title {
+      text-align: left;
+      &:after {
+        content: none;
+      }
+    }
+    &__circle {
+      // display: none;
+      &:after {
+        content: none;
+      }
+    }
+    &__wrapper {
+      margin-right: 0;
+      text-align: left;
+      margin-left: 20px;
+      &--driver {
+        margin-left: 20px;
+      }
+    }
+    &__subtitle {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+  }
+  .about {
+    min-height: 580px;
+    padding-bottom: 40px;
+  }
+  .popularcars {
+    &__title {
+      margin-top: 70px;
+      &:before {
+        content: none;
+      }
+      &--contact {
+        margin: 50px 0;
+      }
+    }
+  }
+  .ourcars {
+    &__title {
+      font-size: 36px;
+      &:before {
+        content: none;
+      }
+    }
+  }
+  .benefit {
+    padding-bottom: 30px;
+  }
+  .question {
+    &__form {
+      margin: 60px 8px 30px;
+    }
+  }
+  .contact {
+    &__info {
+      margin-left: 0;
+      a, span {
+        font-size: 15px;
+      }
+    }
+    &__bgc {
+      padding-bottom: 64px;
+    }
+  }
 }
 
 // Bootstrap Navbar
-
-.navbar-default .navbar-toggle,.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover,
- .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:visited
-  {
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:active,
+.navbar-default .navbar-toggle:visited {
   background: transparent;
   border: none;
   outline: 0;
@@ -75,10 +198,12 @@
   margin-left: 16px;
 }
 
+/* Menu  Burger*/
 
-/* Icon 1 */
-
-#nav-icon1, #nav-icon2, #nav-icon3, #nav-icon4 {
+#nav-icon1,
+#nav-icon2,
+#nav-icon3,
+#nav-icon4 {
   width: 40px;
   height: 45px;
   position: relative;
@@ -94,7 +219,9 @@
   cursor: pointer;
 }
 
-#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+#nav-icon1 span,
+#nav-icon3 span,
+#nav-icon4 span {
   display: block;
   position: absolute;
   height: 8px;
@@ -146,6 +273,7 @@
   transform: rotate(-135deg);
 }
 
+
 /* Icon 2 */
 
 #nav-icon2 span {
@@ -171,30 +299,35 @@
 }
 
 #nav-icon2 span:nth-child(odd) {
-  left:0px;
+  left: 0px;
   border-radius: 9px 0 0 9px;
 }
 
-#nav-icon2 span:nth-child(1), #nav-icon2 span:nth-child(2) {
+#nav-icon2 span:nth-child(1),
+#nav-icon2 span:nth-child(2) {
   top: 0px;
 }
 
-#nav-icon2 span:nth-child(3), #nav-icon2 span:nth-child(4) {
+#nav-icon2 span:nth-child(3),
+#nav-icon2 span:nth-child(4) {
   top: 18px;
 }
 
-#nav-icon2 span:nth-child(5), #nav-icon2 span:nth-child(6) {
+#nav-icon2 span:nth-child(5),
+#nav-icon2 span:nth-child(6) {
   top: 36px;
 }
 
-#nav-icon2.open span:nth-child(1),#nav-icon2.open span:nth-child(6) {
+#nav-icon2.open span:nth-child(1),
+#nav-icon2.open span:nth-child(6) {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-#nav-icon2.open span:nth-child(2),#nav-icon2.open span:nth-child(5) {
+#nav-icon2.open span:nth-child(2),
+#nav-icon2.open span:nth-child(5) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
@@ -231,13 +364,15 @@
   top: 29px;
 }
 
+
 /* Icon 3 */
 
 #nav-icon3 span:nth-child(1) {
   top: 0px;
 }
 
-#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
   top: 18px;
 }
 
@@ -269,11 +404,6 @@
   top: 18px;
   width: 0%;
   left: 50%;
-}
-
-/* Icon 4 */
-
-#nav-icon4 {
 }
 
 #nav-icon4 span:nth-child(1) {

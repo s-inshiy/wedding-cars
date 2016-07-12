@@ -65,9 +65,6 @@ The `sprites` mixin generates identical output to the CSS template
 body {
   min-width: 320px; }
 
-.container {
-  padding: 0; }
-
 .navbar-default {
   box-shadow: none;
   background-image: none;
@@ -99,6 +96,15 @@ body {
 
 .nav > li > a {
   padding: 15px 34px; }
+
+#preloader {
+  background-color: #27cbc0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99; }
 
 /* ------------------------------------
     Header Styles
@@ -314,7 +320,7 @@ body {
     How to
 ------------------------------------- */
 .howto__left {
-  height: 512px; }
+  min-height: 512px; }
   .howto__left--bgc {
     background: url(/assets/images/howto__left-min.jpg) no-repeat center;
     background-size: cover; }
@@ -325,15 +331,14 @@ body {
   .howto__right--left {
     margin-left: 23%; }
   .howto__right--bgc {
-    height: 512px;
+    min-height: 512px;
     background-color: #f2f2f2; }
 
 .howto__title {
-  text-align: left;
   color: #fff;
   font-family: 'Museo-Cyrl', sans-serif;
   font-size: 40px;
-  width: 464px;
+  width: 100%;
   margin-bottom: 0;
   position: relative; }
   .howto__title:after {
@@ -403,7 +408,7 @@ body {
       content: none; }
 
 .howto__driver {
-  height: 512px; }
+  min-height: 512px; }
   .howto__driver--bgc {
     background: url(/assets/images/howto__right-min.jpg) no-repeat center;
     background-size: cover; }
@@ -510,7 +515,7 @@ body {
     About Styles
 ------------------------------------- */
 .about {
-  height: 534px; }
+  min-height: 534px; }
   .about__info {
     font-size: 18px;
     font-family: 'Lato-Regular', sans-serif;
@@ -612,7 +617,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 539px; }
+    min-height: 539px; }
   .contact__info {
     margin-left: 28px; }
     .contact__info span {
@@ -667,7 +672,7 @@ body {
     Footer Styles
 ------------------------------------- */
 .footer {
-  height: 82px;
+  min-height: 82px;
   background-color: #2e3333; }
   .footer__info {
     margin-top: 30px;
