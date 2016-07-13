@@ -1,4 +1,5 @@
 @import "../sprites/sprite";
+
 @font-face {
     font-family: 'Lato-Regular';
     src: url('/assets/fonts/latoregular.ttf') format('truetype');
@@ -25,6 +26,14 @@
 
 body {
     min-width: 320px;
+}
+
+a {
+    transition: all .3s ease;
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 .navbar-default {
@@ -79,7 +88,6 @@ body {
 // section, footer {
 //     overflow: hidden
 // }
-
 
 /* ------------------------------------
     Header Styles
@@ -197,11 +205,16 @@ body {
             margin-top: 64px;
             margin-right: 6px;
         }
+        &--order {
+            padding: 18px 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
     }
 }
 
 /* ------------------------------------
-    Our Cars Styles
+    Page Home, Our Cars Styles 
 ------------------------------------- */
 
 .ourcars {
@@ -317,7 +330,7 @@ body {
 }
 
 /* ------------------------------------
-    How to
+    Page Home, How to Styles
 ------------------------------------- */
 
 .howto {
@@ -433,11 +446,14 @@ body {
 }
 
 /* ------------------------------------
-    Popular Cars  Styles
+    Page Home, Popular Cars  Styles
 ------------------------------------- */
 
 .popularcars {
-    margin-bottom: 120px;
+    &--pageorder {
+       background-color: #f2f2f2; 
+    }
+    padding-bottom: 120px;
     &__title {
         margin-top: 96px;
         margin-bottom: 92px;
@@ -550,7 +566,7 @@ body {
 }
 
 /* ------------------------------------
-    About Styles
+    Page Home, About Styles
 ------------------------------------- */
 
 .about {
@@ -586,7 +602,7 @@ body {
 }
 
 /* ------------------------------------
-    Question Styles
+    Page Home, Question Styles
 ------------------------------------- */
 
 .question {
@@ -657,7 +673,7 @@ body {
 }
 
 /* ------------------------------------
-    Contact Styles
+    Page Home, Contact Styles
 ------------------------------------- */
 
 .contact {
@@ -740,5 +756,140 @@ body {
         font-size: 16px;
         font-family: 'Lato-Regular', sans-serif;
         color: #646565;
+    }
+}
+
+
+/* ------------------------------------
+    Page Order, Order Car Styles
+------------------------------------- */
+
+.order {
+    font-family: 'Lato-Regular',sans-serif;
+    font-size: 16px;
+    margin-bottom: 80px;
+    p {
+        color: #808080;
+        text-align: justify;        
+    }
+    &__layout {
+        margin-top: -516px;
+        padding-top: 10px;
+        background: #fff;
+    }
+    &__title {
+        font-family: 'Museo-Cyrl', sans-serif;
+        font-size: 40px;
+        padding-top: 46px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    &__crums {
+        padding: 20px 0 30px;
+        display: inline-block;
+        font-family: 'Lato-Regular', sans-serif;
+        font-size: 14px;
+        color: #808080;
+        transition: all .3s ease;
+        &:hover {
+           text-decoration: none;
+        }
+    }
+    &__comment {
+        font-family: 'Lato-Regular', sans-serif;
+        font-size: 16px;
+        display: inline-block;
+        margin-left: 14px;
+        transition: all .3s ease;
+        color: #27cbc0;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin-top: 16px;
+        margin-bottom: 20px;
+        li {
+            font-family: 'Lato-Regular', sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+            span {
+                color: #808080;        
+                display: inline-block;
+                width: 160px;
+            }
+            strong {
+                color: #4d4d4d;
+            }
+        }
+    }
+   &__subtitle {
+       font-size: 16px;
+   }
+   &__calendar {
+       margin-top: 38px;
+   }
+   &__header {
+       font-family: 'Lato-Bold', sans-serif;
+       margin-top: 60px;
+       margin-bottom: 28px;
+       font-size: 22px;
+       color: #333;
+       display: inline-block;
+       position: relative;
+       &:before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 80%;
+        top: -14px;
+        background-color: rgb(39, 203, 192);
+       }              
+   }
+}
+
+.rent {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    &__title {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    &__price {
+        display: inline-block;
+        height: 58px;
+        min-width: 108px;
+        padding: 4px 0 0 18px ;
+        background-color: #eee;
+        &--mid {
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+        span {
+            display: block;
+        }
+        b {
+            font-family: 'Lato-Bold', sans-serif;
+            font-size: 18px;
+            color: #4d4d4d;
+        }
+    }
+}
+
+.comment {
+    margin-bottom: 50px;
+    &__name {
+        width: 160px;
+        display: inline-block;
+        margin-right: 10px;
+        color: #333;       
+        font-weight: bold; 
+    }
+    &__date {
+        display: block;
+         color: #808080;       
+         margin-bottom: 10px; 
     }
 }

@@ -65,6 +65,12 @@ The `sprites` mixin generates identical output to the CSS template
 body {
   min-width: 320px; }
 
+a {
+  transition: all .3s ease;
+  cursor: pointer; }
+  a:hover {
+    text-decoration: none; }
+
 .navbar-default {
   box-shadow: none;
   background-image: none;
@@ -219,9 +225,13 @@ body {
       padding: 18px 36px;
       margin-top: 64px;
       margin-right: 6px; }
+    .header__button--order {
+      padding: 18px 30px;
+      margin-top: 30px;
+      margin-bottom: 30px; }
 
 /* ------------------------------------
-    Our Cars Styles
+    Page Home, Our Cars Styles 
 ------------------------------------- */
 .ourcars__title {
   margin-top: 90px;
@@ -317,7 +327,7 @@ body {
     outline: none; }
 
 /* ------------------------------------
-    How to
+    Page Home, How to Styles
 ------------------------------------- */
 .howto__left {
   min-height: 512px; }
@@ -414,10 +424,12 @@ body {
     background-size: cover; }
 
 /* ------------------------------------
-    Popular Cars  Styles
+    Page Home, Popular Cars  Styles
 ------------------------------------- */
 .popularcars {
-  margin-bottom: 120px; }
+  padding-bottom: 120px; }
+  .popularcars--pageorder {
+    background-color: #f2f2f2; }
   .popularcars__title {
     margin-top: 96px;
     margin-bottom: 92px;
@@ -512,7 +524,7 @@ body {
   color: #27cbc0; }
 
 /* ------------------------------------
-    About Styles
+    Page Home, About Styles
 ------------------------------------- */
 .about {
   min-height: 534px; }
@@ -540,7 +552,7 @@ body {
     margin-left: 50px; }
 
 /* ------------------------------------
-    Question Styles
+    Page Home, Question Styles
 ------------------------------------- */
 .question {
   margin-bottom: 100px;
@@ -605,7 +617,7 @@ body {
       height: 21px; }
 
 /* ------------------------------------
-    Contact Styles
+    Page Home, Contact Styles
 ------------------------------------- */
 .contact {
   font-family: 'Lato-Regular', sans-serif;
@@ -679,3 +691,111 @@ body {
     font-size: 16px;
     font-family: 'Lato-Regular', sans-serif;
     color: #646565; }
+
+/* ------------------------------------
+    Page Order, Order Car Styles
+------------------------------------- */
+.order {
+  font-family: 'Lato-Regular',sans-serif;
+  font-size: 16px;
+  margin-bottom: 80px; }
+  .order p {
+    color: #808080;
+    text-align: justify; }
+  .order__layout {
+    margin-top: -516px;
+    padding-top: 10px;
+    background: #fff; }
+  .order__title {
+    font-family: 'Museo-Cyrl', sans-serif;
+    font-size: 40px;
+    padding-top: 46px;
+    margin-bottom: 20px;
+    color: #333; }
+  .order__crums {
+    padding: 20px 0 30px;
+    display: inline-block;
+    font-family: 'Lato-Regular', sans-serif;
+    font-size: 14px;
+    color: #808080;
+    transition: all .3s ease; }
+    .order__crums:hover {
+      text-decoration: none; }
+  .order__comment {
+    font-family: 'Lato-Regular', sans-serif;
+    font-size: 16px;
+    display: inline-block;
+    margin-left: 14px;
+    transition: all .3s ease;
+    color: #27cbc0; }
+    .order__comment:hover {
+      text-decoration: none; }
+  .order__list {
+    list-style: none;
+    padding: 0;
+    margin-top: 16px;
+    margin-bottom: 20px; }
+    .order__list li {
+      font-family: 'Lato-Regular', sans-serif;
+      font-size: 16px;
+      line-height: 1.6; }
+      .order__list li span {
+        color: #808080;
+        display: inline-block;
+        width: 160px; }
+      .order__list li strong {
+        color: #4d4d4d; }
+  .order__subtitle {
+    font-size: 16px; }
+  .order__calendar {
+    margin-top: 38px; }
+  .order__header {
+    font-family: 'Lato-Bold', sans-serif;
+    margin-top: 60px;
+    margin-bottom: 28px;
+    font-size: 22px;
+    color: #333;
+    display: inline-block;
+    position: relative; }
+    .order__header:before {
+      content: '';
+      position: absolute;
+      height: 2px;
+      width: 80%;
+      top: -14px;
+      background-color: #27cbc0; }
+
+.rent {
+  margin-top: 40px;
+  margin-bottom: 20px; }
+  .rent__title {
+    margin-bottom: 20px;
+    font-size: 16px; }
+  .rent__price {
+    display: inline-block;
+    height: 58px;
+    min-width: 108px;
+    padding: 4px 0 0 18px;
+    background-color: #eee; }
+    .rent__price--mid {
+      margin-left: 6px;
+      margin-right: 6px; }
+    .rent__price span {
+      display: block; }
+    .rent__price b {
+      font-family: 'Lato-Bold', sans-serif;
+      font-size: 18px;
+      color: #4d4d4d; }
+
+.comment {
+  margin-bottom: 50px; }
+  .comment__name {
+    width: 160px;
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+    font-weight: bold; }
+  .comment__date {
+    display: block;
+    color: #808080;
+    margin-bottom: 10px; }
