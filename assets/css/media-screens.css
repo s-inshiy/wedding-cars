@@ -5,14 +5,40 @@
     margin-left: 10%; } }
 
 @media screen and (max-width: 1200px) {
+  .order {
+    margin-bottom: 40px; }
+    .order__title {
+      padding-top: 20px; }
   .header__info {
     margin-left: 100px; }
+  .header__button--order {
+    padding: 18px 12px;
+    margin-top: 40px; }
   .howto__right--left {
     margin-left: 0; }
   .howto__step {
     font-size: 15px; }
   .nav > li > a {
     padding: 16px 32px; } }
+
+@media screen and (max-width: 991px) {
+  .order__title {
+    border-top: 2px solid #27cbc0;
+    padding-top: 20px; }
+  .order__calendar {
+    margin-top: 20px; }
+    .order__calendar a {
+      display: inline-block;
+      margin-left: 40px; }
+  .header__button {
+    font-size: 16px; }
+    .header__button--order {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .header__button--right {
+      margin-top: 30px; }
+  .rent {
+    margin-top: 20px; } }
 
 @media screen and (min-width: 767px) and (max-width: 991px) {
   .nav > li > a {
@@ -48,6 +74,8 @@
     font-size: 40px; }
   .header__info {
     margin-left: 80px; }
+  .header--order {
+    min-height: auto; }
   .popularcars__title {
     font-size: 36px; }
   .howto__right {
@@ -91,10 +119,17 @@
     margin: 60px 8px 30px; }
   .contact__info {
     margin-left: 0; }
-    .contact__info a, .contact__info span {
+    .contact__info a,
+    .contact__info span {
       font-size: 15px; }
   .contact__bgc {
-    padding-bottom: 64px; } }
+    padding-bottom: 64px; }
+  .order__layout {
+    margin-top: -20px; }
+  .fotorama__wrap {
+    margin: 0 auto; }
+  .rent__price {
+    margin-bottom: 10px; } }
 
 .navbar-default .navbar-toggle,
 .navbar-default .navbar-toggle:focus,

@@ -210,6 +210,9 @@ a {
             margin-top: 30px;
             margin-bottom: 30px;
         }
+        &--right {
+            float: right;
+        }
     }
 }
 
@@ -459,7 +462,6 @@ a {
         margin-bottom: 92px;
         font-size: 40px;
         display: inline-block;
-        // text-align: center;
         font-family: 'Museo-Cyrl', sans-serif;
         position: relative;
         &:before {
@@ -848,6 +850,13 @@ a {
         background-color: rgb(39, 203, 192);
        }              
    }
+   &__form {
+       strong {
+           display: inline-block;
+           color: #808080;        
+           width:  80px;
+       }
+   }
 }
 
 .rent {
@@ -893,3 +902,4 @@ a {
          margin-bottom: 10px; 
     }
 }
+

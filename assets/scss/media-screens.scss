@@ -12,9 +12,21 @@
 }
 
 @media screen and (max-width:1200px) {
+  .order {
+    margin-bottom: 40px;
+    &__title {
+       padding-top: 20px;
+    }
+  }
   .header {
     &__info {
       margin-left: 100px;
+    }
+    &__button {
+      &--order {
+        padding: 18px 12px;
+        margin-top: 40px;
+      }
     }
   }
   .howto {
@@ -29,6 +41,37 @@
   }
   .nav>li>a {
     padding: 16px 32px;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .order {
+    &__title {
+      border-top: 2px solid #27cbc0;
+      padding-top: 20px;
+    }
+    &__calendar {
+      margin-top: 20px;
+      a {
+        display: inline-block;
+        margin-left: 40px;
+      }
+    }
+  }
+  .header {
+    &__button {
+      font-size: 16px;
+      &--order {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      &--right {
+        margin-top: 30px;
+      }
+    }
+  }
+  .rent {
+    margin-top: 20px;
   }
 }
 
@@ -91,6 +134,9 @@
     }
     &__info {
       margin-left: 80px;
+    }
+    &--order {
+      min-height: auto;
     }
   }
   .popularcars {
@@ -168,7 +214,8 @@
   .contact {
     &__info {
       margin-left: 0;
-      a, span {
+      a,
+      span {
         font-size: 15px;
       }
     }
@@ -176,6 +223,22 @@
       padding-bottom: 64px;
     }
   }
+  .order {
+    &__layout {
+      margin-top: -20px;
+    }
+  }
+.fotorama {
+  &__wrap {
+    margin: 0 auto;
+  }
+}
+.rent {
+  &__price{
+    margin-bottom: 10px;
+  }
+}
+
 }
 
 // Bootstrap Navbar
@@ -197,6 +260,7 @@
 .nav__social {
   margin-left: 16px;
 }
+
 
 /* Menu  Burger*/
 

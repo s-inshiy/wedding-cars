@@ -71,7 +71,7 @@ $(function() {
   });
 
   function runMenuBehaviour() {
-    if ($(window).width() < 754) {
+    if ($(window).width() < 768) {
       if (mainMenu.isTop) return;
       mainMenu.isTop = true;
       toggleMenu({
