@@ -38,9 +38,13 @@
 
 </head>
 
-<body>
+<body class="checkout-car">
 
   <div id="preloader"></div>
+
+  <a href="#" class="scrollToTop">
+    <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+  </a>
 
   <!-- ------------------------------------
     Header
@@ -113,153 +117,83 @@
   </header>
 
   <!-- ------------------------------------
-    Gallery Cars
+    Checkout Cars
 ------------------------------------- -->
 
   <section class="order">
     <div class="container">
-      <div class="row order__layout">
-        <div class="col-md-offset-1 col-md-6 col-sm-offset-1">
-          <a class="order__crums" href="#">Главная / Авто / Audi A6</a>
-          <div class="fotorama" data-nav="thumbs" data-thumbwidth="128" data-thumbheight="96" data-thumbmargin="22" data-keyboard='{"space": true, "home": true, "end": true, "up": true, "down": true}'>
-            <a href="/assets/images/order__car0.jpg"><img src="/assets/images/order__car2.jpg"></a>
-            <a href="/assets/images/order__car0.jpg"><img src="/assets/images/order__car2.jpg"></a>
-            <a href="/assets/images/order__car0.jpg"><img src="/assets/images/order__car2.jpg"></a>
-            <a href="/assets/images/order__car0.jpg"><img src="/assets/images/order__car2.jpg"></a>
-            <a href="/assets/images/order__car0.jpg"><img src="/assets/images/order__car2.jpg"></a>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <h3 class="order__title">
-            Audi A6
+      <div class="row order__layout order__layout--checkout">
+        <div class="col-md-offset-1 col-md-11 col-sm-offset-1">
+          <a class="order__crums order__crums--checkout" href="#">Главная / Оформление заказа</a>
+          <h3 class="order__title order__title--checkout">
+             Оформление заказа
           </h3>
-          <div class="slider__rating">
-            Рейтинг:
-            <span class="slider__star slider__star--full"></span>
-            <span class="slider__star slider__star--full"></span>
-            <span class="slider__star slider__star--full"></span>
-            <span class="slider__star slider__star--full"></span>
-            <span class="slider__star"></span>
-            <a href="#" class="order__comment">Отзывов (2)</a>
+          <div class="checkout__info">
+
           </div>
-          <ul class="order__list">
-            <li>
-              <span>Артикул:</span><strong>aa6-001</strong>
-            </li>
-            <li>
-              <span>Цвет:</span> <strong>Белый</strong>
-            </li>
-            <li>
-              <span>Количество мест:</span> <strong>4</strong>
-            </li>
-            <li>
-              <span>Год выпуска: </span><strong>2014</strong></li>
-            <li>
-              <span>Cвой декор:</span> <strong>Нет</strong>
-            </li>
-            <li>
-              <span>Согласие на декор:</span> <strong>Да</strong>
-            </li>
-          </ul>
-          <div class="rent">
-            <h4 class="rent__title">Стоимость аренды:</h4>
-            <div class="rent__price">
-              <span>1 час</span>
-              <b>500 грн</b>
-            </div>
-            <div class="rent__price rent__price--mid">
-              <span>от 5 часов</span>
-              <b>400 грн</b>
-            </div>
-            <div class="rent__price">
-              <span>за городом</span>
-              <b>5 грн\км</b>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <button class="header__button header__button--order">Заказать Авто</button>
-            </div>
-            <div class="col-md-6 ">
-              <div class="order__calendar">
-                Свободные даты:
-                <a href="#">Посмотреть календарь</a>
+          <div class="checkout__form">
+            <div class="row">
+              <div class="col-md-5">
+                <h3 class="checkout__title">
+                  Контактная информация:
+                </h3>
+                <form>
+                  <div class="form-group form-group--noicon">
+                    <input type="text" class="form-control" placeholder="ФИО">
+                  </div>
+                  <div class="form-group form-group--noicon">
+                    <input type="text" class="form-control" placeholder="Мобильный телефон">
+                  </div>
+                  <div class="form-group form-group--noicon">
+                    <input type="email" class="form-control" placeholder="Электронная почта">
+                  </div>
+                  <div class="form-group form-group--noicon">
+                    <label>Зарегистрироватся</label>
+                    <input type="checkbox">
+                  </div>
+                  <div class="form-group form-group--noicon">
+                    <input type="password" class="form-control" placeholder="Пароль">
+                  </div>
+                  <div class="form-group form-group--noicon">
+                    <input type="password" class="form-control" placeholder="Повторите пароль">
+                  </div>
+                  <button class="header__button header__button--order" type="submit">Оформить заказ</button>
+                </form>
+              </div>
+              <div class="col-md-6 end">
+                <h3 class="checkout__title">
+                  Информация для заказа автомобиля: 
+                 </h3>
+                <div class="row">
+                  <div class="col-md-6">
+                    <form>
+                      <div class="form-group form-group--noicon">
+                        <input type="text" class="form-control" placeholder="Город">
+                      </div>
+                      <div class="form-group form-group--noicon">
+                        <input type="number" class="form-control" placeholder="Количество часов">
+                      </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group form-group--noicon">
+                      <input type="text" class="form-control" placeholder="Дата события">
+                    </div>
+                    <div class="form-group form-group--noicon">
+                      <input type="text" class="form-control" placeholder="Поездка за город">
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group form-group--noicon">
+                      <input type="text" class="form-control" placeholder="Предполагаемый маршрут">
+                    </div>
+                    <div class="form-group form-group--textarea">
+                      <textarea class="form-control form-control--message" rows="5" placeholder="Комментарии и пожелания"></textarea>
+                    </div>
+                  </div>
+                  </form>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-offset-1 col-md-6">
-          <h3 class="order__header">Описание</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ut dolor numquam fugit atque veniam reprehenderit rem quaerat voluptas enim, magni officia odit consectetur autem quidem harum quo architecto! Mollitia dolorum est aliquam optio
-            dolorem. Optio quod eligendi ex, reiciendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ut dolor numquam fugit atque veniam reprehenderit rem quaerat voluptas enim, magni officia odit consectetur autem quidem harum quo
-            architecto! Mollitia dolorum est aliquam optio dolorem. Optio quod eligendi ex, reiciendis.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ut dolor numquam fugit atque veniam reprehenderit rem quaerat voluptas enim, magni officia odit consectetur autem quidem harum quo architecto! Mollitia dolorum est aliquam optio
-            dolorem. Optio quod eligendi ex, reiciendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ut dolor numquam fugit atque veniam reprehenderit rem quaerat voluptas enim, magni officia odit consectetur autem quidem harum quo
-            architecto! Mollitia dolorum est aliquam optio dolorem. Optio quod eligendi ex, reiciendis.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ut dolor numquam fugit atque veniam reprehenderit rem quaerat voluptas enim, magni officia odit consectetur autem quidem harum quo architecto! Mollitia dolorum est aliquam optio
-            dolorem. Optio quod eligendi ex, reiciendis.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione ut dolor numquam fugit atque veniam reprehenderit rem quaerat voluptas enim, magni officia odit consectetur autem quidem harum quo
-            architecto! Mollitia dolorum est aliquam optio dolorem. Optio quod eligendi ex, reiciendis.</p>
-          <span class="contact__social">Понравился автомобиль? Поделись!</span>
-          <a href="#" class="header__icon header__icon--vk"></a>
-          <a href="#" class="header__icon header__icon--fb"></a>
-          <a href="#" class="header__icon header__icon--twitter"></a>
-        </div>
-        <div class="col-md-5">
-          <h3 class="order__header">Отзывы</h3>
-          <div class="comment">
-            <span class="comment__name">Сергей Слесарев</span>
-            <span class="slider__star slider__star--full"></span>
-            <span class="slider__star slider__star--full"></span>
-            <span class="slider__star slider__star--full"></span>
-            <span class="slider__star slider__star--full"></span>
-            <span class="slider__star slider__star--full"></span>
-            <span class="comment__date">20.05.2016</span>
-            <p class="comment__detail">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non dicta quia aliquam sed nulla sunt, modi, adipisci earum vel odit doloremque sapiente, omnis perspiciatis aliquid! Expedita quas dicta sequi distinctio, autemc
-            </p>
-          </div>
-          <div class="comment">
-            <span class="comment__name">Виталий Клочко</span>
-            <span class="slider__star slider__star--full"></span>
-            <span class="slider__star slider__star--full"></span>
-            <span class="slider__star slider__star--full"></span>
-            <span class="slider__star slider__star--full"></span>
-            <span class="slider__star"></span>
-            <span class="comment__date">20.05.2016</span>
-            <p class="comment__detail">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores adipisci magnam,
-            </p>
-          </div>
-          <div class="comment">
-            <span class="comment__name">Андрей Парубочный</span>
-            <span class="slider__star slider__star--full"></span>
-            <span class="slider__star slider__star--full"></span>
-            <span class="slider__star slider__star--full"></span>
-            <span class="slider__star slider__star--full"></span>
-            <span class="slider__star slider__star--full"></span>
-            <span class="comment__date">20.05.2016</span>
-            <p class="comment__detail">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores adipisci magnam, ipsum dolor sit amet, consectetur adipisicing elit. Asperiores adipisci magnam
-            </p>
-          </div>
-          <div class="order__form">
-            <form role="form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Ваше Имя">
-              </div>
-              <div class="form-group form-group--textarea">
-                <textarea class="form-control" rows="5" placeholder="Текст Отзыва"></textarea>
-              </div>
-                <strong>Рейтинг: </strong>
-                <span class="slider__star"></span>
-                <span class="slider__star"></span>
-                <span class="slider__star"></span>
-                <span class="slider__star"></span>
-                <span class="slider__star"></span>
-                <button class="header__button header__button--order header__button--right">Оставить Отзыв</button>
-            </form>
           </div>
         </div>
       </div>
@@ -267,143 +201,12 @@
     </div>
   </section>
 
-  <!-- ------------------------------------
-    Popular Cars
-------------------------------------- -->
 
-  <section class="popularcars popularcars--pageorder">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-offset-2 col-md-8 text-center">
-          <h3 class="popularcars__title">
-                      Похожие модели
-                  </h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <div class="slider">
-
-            <div class="slider__item">
-              <div class="slider__image" style="background-image:url(/assets/images/popular__audi-min.jpg)"></div>
-              <div class="slider__info">
-                <h3 class="slider__title">Audi A6</h3>
-                <div class="slider__rating">
-                  Рейтинг:
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star"></span>
-                </div>
-                <a href="#" class="slider__more">Подробней</a>
-              </div>
-            </div>
-
-            <div class="slider__item">
-              <div class="slider__image" style="background-image:url(/assets/images/popular__chrysler-min.jpg)"></div>
-              <div class="slider__info">
-                <h3 class="slider__title">Chrysler 300C</h3>
-                <div class="slider__rating">
-                  Рейтинг:
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star"></span>
-                </div>
-                <a href="#" class="slider__more">Подробней</a>
-              </div>
-            </div>
-
-            <div class="slider__item">
-              <div class="slider__image" style="background-image:url(/assets/images/popular__lincoln-min.jpg)"></div>
-              <div class="slider__info">
-                <h3 class="slider__title">Lincoln Town Car</h3>
-                <div class="slider__rating">
-                  Рейтинг:
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star"></span>
-                  <span class="slider__star"></span>
-                </div>
-                <a href="#" class="slider__more">Подробней</a>
-              </div>
-            </div>
-
-            <div class="slider__item">
-              <div class="slider__image" style="background-image:url(/assets/images/popular__mercedes-min.jpg)"></div>
-              <div class="slider__info">
-                <h3 class="slider__title">Mercedes-Benz S221 Pullman</h3>
-                <div class="slider__rating">
-                  Рейтинг:
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star"></span>
-                </div>
-                <a href="#" class="slider__more">Подробней</a>
-              </div>
-            </div>
-
-            <div class="slider__item">
-              <div class="slider__image" style="background-image:url(/assets/images/popular__audi-min.jpg)"></div>
-              <div class="slider__info">
-                <h3 class="slider__title">Audi A6</h3>
-                <div class="slider__rating">
-                  Рейтинг:
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star slider__star--full"></span>
-                  <span class="slider__star"></span>
-                </div>
-                <a href="#" class="slider__more">Подробней</a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <!-- ------------------------------------
-  Question
-------------------------------------- -->
-  <section class="question">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 text-center">
-          <h3 class="popularcars__title popularcars__title--question">
-                        Остались вопросы?
-                    </h3>
-          <span class="question__subtitle">
-                задайте их нам через форму обратной связи
-                </span>
-          <div class="question__form">
-            <form role="form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Ваше имя">
-              </div>
-              <div class="form-group form-group--phone">
-                <input type="text" class="form-control" placeholder="Ваш номер телефона">
-              </div>
-              <div class="form-group form-group--textarea">
-                <textarea class="form-control form-control--message" rows="5" placeholder="Ваш вопрос"></textarea>
-              </div>
-              <button type="submit" class="btn btn-default pull-right question__button">Получить ответ</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- ------------------------------------
     Footer 
 ------------------------------------- -->
+
   <footer class="footer">
     <div class="container">
       <div class="row">
@@ -421,9 +224,6 @@
 
   <!-- Latest compiled and minified JavaScript -->
   <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
-  <!--Fotorama 4.6.4-->
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 
   <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
   <!--<script src="/node_modules/slick-carousel/slick/slick.min.js"></script>-->

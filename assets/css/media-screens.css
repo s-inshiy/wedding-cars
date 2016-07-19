@@ -19,7 +19,9 @@
   .howto__step {
     font-size: 15px; }
   .nav > li > a {
-    padding: 16px 32px; } }
+    padding: 16px 32px; }
+  .scrollToTop {
+    right: 26px; } }
 
 @media screen and (max-width: 991px) {
   .order__title {
@@ -71,11 +73,14 @@
   .header__link {
     margin-bottom: 36px; }
   .header__title {
-    font-size: 40px; }
+    font-size: 40px;
+    margin-top: 60px; }
   .header__info {
     margin-left: 80px; }
   .header--order {
     min-height: auto; }
+  .header__button {
+    margin-top: 30px; }
   .popularcars__title {
     font-size: 36px; }
   .howto__right {
@@ -129,7 +134,17 @@
   .fotorama__wrap {
     margin: 0 auto; }
   .rent__price {
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .scrollToTop {
+    width: 50px;
+    height: 60px;
+    font-size: 50px;
+    position: fixed;
+    bottom: 100px;
+    right: 6px;
+    display: none;
+    color: #27cbc0;
+    z-index: 999; } }
 
 .navbar-default .navbar-toggle,
 .navbar-default .navbar-toggle:focus,

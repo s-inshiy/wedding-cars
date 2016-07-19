@@ -15,7 +15,7 @@
   .order {
     margin-bottom: 40px;
     &__title {
-       padding-top: 20px;
+      padding-top: 20px;
     }
   }
   .header {
@@ -41,6 +41,9 @@
   }
   .nav>li>a {
     padding: 16px 32px;
+  }
+  .scrollToTop {
+    right: 26px;
   }
 }
 
@@ -131,12 +134,16 @@
     }
     &__title {
       font-size: 40px;
+      margin-top: 60px;
     }
     &__info {
       margin-left: 80px;
     }
     &--order {
       min-height: auto;
+    }
+    &__button {
+      margin-top: 30px;
     }
   }
   .popularcars {
@@ -228,17 +235,27 @@
       margin-top: -20px;
     }
   }
-.fotorama {
-  &__wrap {
-    margin: 0 auto;
+  .fotorama {
+    &__wrap {
+      margin: 0 auto;
+    }
   }
-}
-.rent {
-  &__price{
-    margin-bottom: 10px;
+  .rent {
+    &__price {
+      margin-bottom: 10px;
+    }
   }
-}
-
+  .scrollToTop {
+    width: 50px;
+    height: 60px;
+    font-size: 50px;
+    position: fixed;
+    bottom: 100px;
+    right: 6px;
+    display: none;
+    color: #27cbc0;
+    z-index: 999;
+  }
 }
 
 // Bootstrap Navbar

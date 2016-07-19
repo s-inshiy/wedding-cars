@@ -28,6 +28,27 @@ body {
     min-width: 320px;
 }
 
+.scrollToTop {
+    width: 50px;
+    height: 60px;
+    font-size: 56px;
+    text-decoration: none;
+    position: fixed;
+    // top: 80%;
+    opacity: .5;
+    bottom: 140px;
+    right: 40px;
+    display: none;
+    color: #27cbc0;
+    transition: all .3s ease;
+    z-index: 999;
+    &:hover, &:focus {
+        opacity: 1;
+        text-decoration: none;
+        color: #29d9c2;
+    }
+}
+
 a {
     transition: all .3s ease;
     cursor: pointer;
@@ -74,15 +95,14 @@ a {
     padding: 15px 34px;
 }
 
-#preloader
-{
-    background-color:#27cbc0; 
-    bottom:0;
-    left:0;
-    position:fixed;
-    right:0;
-    top:0;
-    z-index:99; 
+#preloader {
+    background-color: #27cbc0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99;
 }
 
 // section, footer {
@@ -216,6 +236,7 @@ a {
     }
 }
 
+
 /* ------------------------------------
     Page Home, Our Cars Styles 
 ------------------------------------- */
@@ -332,6 +353,7 @@ a {
     }
 }
 
+
 /* ------------------------------------
     Page Home, How to Styles
 ------------------------------------- */
@@ -374,7 +396,7 @@ a {
             top: 32px;
         }
         &--right {
-            &:after{
+            &:after {
                 left: -17%;
             }
         }
@@ -448,13 +470,14 @@ a {
     }
 }
 
+
 /* ------------------------------------
     Page Home, Popular Cars  Styles
 ------------------------------------- */
 
 .popularcars {
     &--pageorder {
-       background-color: #f2f2f2; 
+        background-color: #f2f2f2;
     }
     padding-bottom: 120px;
     &__title {
@@ -491,7 +514,7 @@ a {
 }
 
 .slick-next {
-    @include sprite($icon-right);    
+    @include sprite($icon-right);
     height: 34px;
     width: 18px;
     right: -40px;
@@ -500,12 +523,12 @@ a {
     }
     &:hover,
     &:focus {
-        @include sprite($icon-right);    
+        @include sprite($icon-right);
     }
 }
 
 .slick-prev {
-    @include sprite($icon-left);    
+    @include sprite($icon-left);
     height: 34px;
     width: 18px;
     left: -40px;
@@ -514,7 +537,7 @@ a {
     }
     &:hover,
     &:focus {
-        @include sprite($icon-left);    
+        @include sprite($icon-left);
     }
 }
 
@@ -567,6 +590,7 @@ a {
     }
 }
 
+
 /* ------------------------------------
     Page Home, About Styles
 ------------------------------------- */
@@ -603,6 +627,7 @@ a {
     }
 }
 
+
 /* ------------------------------------
     Page Home, Question Styles
 ------------------------------------- */
@@ -631,8 +656,8 @@ a {
         color: #fff;
         transition: all .3s ease;
         &:hover {
-           background-color: #29d9cd;
-           color: #fff;
+            background-color: #29d9cd;
+            color: #fff;
         }
     }
 }
@@ -663,16 +688,28 @@ a {
     }
     &--phone {
         &:before {
-            @include sprite($icon-phone);    
+            @include sprite($icon-phone);
         }
     }
     &--textarea {
         &:before {
-            @include sprite($icon-question);    
+            @include sprite($icon-question);
         }
         margin-bottom: 32px;
     }
+    &--noicon {
+        .form-control {
+            height: 40px;
+            padding-left: 20px;
+            padding-top: 6px;
+            font-size: 15px;
+        }
+        &:before {
+            content: none;
+        }
+    }
 }
+
 
 /* ------------------------------------
     Page Home, Contact Styles
@@ -684,7 +721,7 @@ a {
     color: #555;
     letter-spacing: 1.1px;
     &__map {
-        background-image:  url(/assets/images/contact__map.jpg);
+        background-image: url(/assets/images/contact__map.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -708,7 +745,7 @@ a {
             content: '';
             @include sprite($icon-phone);
             left: 0px;
-            top:6px;
+            top: 6px;
         }
         &:hover {
             text-decoration: none;
@@ -726,7 +763,7 @@ a {
             content: '';
             @include sprite($icon-letter);
             left: 0px;
-            top:6px;
+            top: 6px;
         }
         &:hover {
             text-decoration: none;
@@ -739,11 +776,12 @@ a {
         font-size: 16px;
         display: block;
     }
-    &__bgc{
-         background-color: #f2f2f2;
-         padding-bottom: 94px;
+    &__bgc {
+        background-color: #f2f2f2;
+        padding-bottom: 94px;
     }
 }
+
 
 /* ------------------------------------
     Footer Styles
@@ -761,23 +799,25 @@ a {
     }
 }
 
-
 /* ------------------------------------
     Page Order, Order Car Styles
 ------------------------------------- */
 
 .order {
-    font-family: 'Lato-Regular',sans-serif;
+    font-family: 'Lato-Regular', sans-serif;
     font-size: 16px;
     margin-bottom: 80px;
     p {
         color: #808080;
-        text-align: justify;        
+        text-align: justify;
     }
     &__layout {
         margin-top: -516px;
         padding-top: 10px;
         background: #fff;
+        &--checkout {
+            min-height: 700px;
+        }
     }
     &__title {
         font-family: 'Museo-Cyrl', sans-serif;
@@ -785,6 +825,11 @@ a {
         padding-top: 46px;
         margin-bottom: 20px;
         color: #333;
+        &--checkout {
+            font-size: 30px;
+            padding-top: 0px;
+            padding-bottom: 20px; 
+        }
     }
     &__crums {
         padding: 20px 0 30px;
@@ -793,8 +838,11 @@ a {
         font-size: 14px;
         color: #808080;
         transition: all .3s ease;
+        &--checkout {
+            padding: 10px 0 20px;
+        }
         &:hover {
-           text-decoration: none;
+            text-decoration: none;
         }
     }
     &__comment {
@@ -818,7 +866,7 @@ a {
             font-size: 16px;
             line-height: 1.6;
             span {
-                color: #808080;        
+                color: #808080;
                 display: inline-block;
                 width: 160px;
             }
@@ -827,36 +875,36 @@ a {
             }
         }
     }
-   &__subtitle {
-       font-size: 16px;
-   }
-   &__calendar {
-       margin-top: 38px;
-   }
-   &__header {
-       font-family: 'Lato-Bold', sans-serif;
-       margin-top: 60px;
-       margin-bottom: 28px;
-       font-size: 22px;
-       color: #333;
-       display: inline-block;
-       position: relative;
-       &:before {
-        content: '';
-        position: absolute;
-        height: 2px;
-        width: 80%;
-        top: -14px;
-        background-color: rgb(39, 203, 192);
-       }              
-   }
-   &__form {
-       strong {
-           display: inline-block;
-           color: #808080;        
-           width:  80px;
-       }
-   }
+    &__subtitle {
+        font-size: 16px;
+    }
+    &__calendar {
+        margin-top: 38px;
+    }
+    &__header {
+        font-family: 'Lato-Bold', sans-serif;
+        margin-top: 60px;
+        margin-bottom: 28px;
+        font-size: 22px;
+        color: #333;
+        display: inline-block;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 80%;
+            top: -14px;
+            background-color: rgb(39, 203, 192);
+        }
+    }
+    &__form {
+        strong {
+            display: inline-block;
+            color: #808080;
+            width: 80px;
+        }
+    }
 }
 
 .rent {
@@ -870,7 +918,7 @@ a {
         display: inline-block;
         height: 58px;
         min-width: 108px;
-        padding: 4px 0 0 18px ;
+        padding: 4px 0 0 18px;
         background-color: #eee;
         &--mid {
             margin-left: 6px;
@@ -893,13 +941,31 @@ a {
         width: 160px;
         display: inline-block;
         margin-right: 10px;
-        color: #333;       
-        font-weight: bold; 
+        color: #333;
+        font-weight: bold;
     }
     &__date {
         display: block;
-         color: #808080;       
-         margin-bottom: 10px; 
+        color: #808080;
+        margin-bottom: 10px;
     }
 }
 
+/* ------------------------------------
+    Page Checkout, Checkout Car Styles
+------------------------------------- */
+
+.checkout {
+    &__info {
+        height: 170px;
+        margin-left: 40px;
+        margin-right: 100px;
+        margin-bottom: 16px;
+        background-color: #f2f2f2;
+    }
+    &__title {
+        font-family: 'Lato-Bold', sans-serif;
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+}

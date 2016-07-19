@@ -65,6 +65,24 @@ The `sprites` mixin generates identical output to the CSS template
 body {
   min-width: 320px; }
 
+.scrollToTop {
+  width: 50px;
+  height: 60px;
+  font-size: 56px;
+  text-decoration: none;
+  position: fixed;
+  opacity: .5;
+  bottom: 140px;
+  right: 40px;
+  display: none;
+  color: #27cbc0;
+  transition: all .3s ease;
+  z-index: 999; }
+  .scrollToTop:hover, .scrollToTop:focus {
+    opacity: 1;
+    text-decoration: none;
+    color: #29d9c2; }
+
 a {
   transition: all .3s ease;
   cursor: pointer; }
@@ -617,6 +635,13 @@ a {
       background-position: 0px -93px;
       width: 22px;
       height: 21px; }
+  .form-group--noicon .form-control {
+    height: 40px;
+    padding-left: 20px;
+    padding-top: 6px;
+    font-size: 15px; }
+  .form-group--noicon:before {
+    content: none; }
 
 /* ------------------------------------
     Page Home, Contact Styles
@@ -698,7 +723,7 @@ a {
     Page Order, Order Car Styles
 ------------------------------------- */
 .order {
-  font-family: 'Lato-Regular',sans-serif;
+  font-family: 'Lato-Regular', sans-serif;
   font-size: 16px;
   margin-bottom: 80px; }
   .order p {
@@ -708,12 +733,18 @@ a {
     margin-top: -516px;
     padding-top: 10px;
     background: #fff; }
+    .order__layout--checkout {
+      min-height: 700px; }
   .order__title {
     font-family: 'Museo-Cyrl', sans-serif;
     font-size: 40px;
     padding-top: 46px;
     margin-bottom: 20px;
     color: #333; }
+    .order__title--checkout {
+      font-size: 30px;
+      padding-top: 0px;
+      padding-bottom: 20px; }
   .order__crums {
     padding: 20px 0 30px;
     display: inline-block;
@@ -721,6 +752,8 @@ a {
     font-size: 14px;
     color: #808080;
     transition: all .3s ease; }
+    .order__crums--checkout {
+      padding: 10px 0 20px; }
     .order__crums:hover {
       text-decoration: none; }
   .order__comment {
@@ -805,3 +838,18 @@ a {
     display: block;
     color: #808080;
     margin-bottom: 10px; }
+
+/* ------------------------------------
+    Page Checkout, Checkout Car Styles
+------------------------------------- */
+.checkout__info {
+  height: 170px;
+  margin-left: 40px;
+  margin-right: 100px;
+  margin-bottom: 16px;
+  background-color: #f2f2f2; }
+
+.checkout__title {
+  font-family: 'Lato-Bold', sans-serif;
+  font-size: 17px;
+  margin-bottom: 30px; }
