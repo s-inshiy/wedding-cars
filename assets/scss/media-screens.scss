@@ -256,6 +256,11 @@
     color: #27cbc0;
     z-index: 999;
   }
+  .checkout {
+    &__info {
+      margin-right: 0;
+    }
+  }
 }
 
 // Bootstrap Navbar

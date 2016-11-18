@@ -246,7 +246,14 @@ a {
     .header__button--order {
       padding: 18px 30px;
       margin-top: 30px;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      display: inline-block; }
+    .header__button--termsofuse {
+      padding: 18px 30px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      display: inline-block;
+      margin-left: 20px; }
     .header__button--right {
       float: right; }
 
@@ -842,10 +849,15 @@ a {
 /* ------------------------------------
     Page Checkout, Checkout Car Styles
 ------------------------------------- */
+.checkout__label {
+  font-size: 15px;
+  font-weight: normal;
+  margin-right: 6px;
+  color: #555; }
+
 .checkout__info {
-  height: 170px;
-  margin-left: 40px;
-  margin-right: 100px;
+  min-height: 170px;
+  margin-right: 88px;
   margin-bottom: 16px;
   background-color: #f2f2f2; }
 
@@ -853,3 +865,39 @@ a {
   font-family: 'Lato-Bold', sans-serif;
   font-size: 17px;
   margin-bottom: 30px; }
+  .checkout__title--regist {
+    margin-top: 44px;
+    margin-bottom: 34px; }
+
+.checkout__border {
+  border-top: 1px solid #ccc;
+  margin-top: 10px; }
+
+.termsofuse {
+  display: inline-block; }
+  .termsofuse__form {
+    display: inline-block; }
+  .termsofuse__info {
+    margin-right: 6px; }
+
+.nav-tabs {
+  border: none; }
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  color: #fff;
+  cursor: default;
+  background-color: #27cbc0;
+  border-radius: 2px;
+  text-transform: uppercase;
+  border: none; }
+
+.nav-tabs > li > a {
+  text-transform: uppercase;
+  border: none;
+  transition: all .3s ease;
+  border-radius: 2px; }
+  .nav-tabs > li > a:hover {
+    background-color: #27cbc0;
+    color: #fff; }

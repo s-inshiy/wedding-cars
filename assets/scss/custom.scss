@@ -1,5 +1,4 @@
 @import "../sprites/sprite";
-
 @font-face {
     font-family: 'Lato-Regular';
     src: url('/assets/fonts/latoregular.ttf') format('truetype');
@@ -42,7 +41,8 @@ body {
     color: #27cbc0;
     transition: all .3s ease;
     z-index: 999;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         opacity: 1;
         text-decoration: none;
         color: #29d9c2;
@@ -229,6 +229,14 @@ a {
             padding: 18px 30px;
             margin-top: 30px;
             margin-bottom: 30px;
+            display: inline-block;
+        }
+        &--termsofuse {
+            padding: 18px 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            display: inline-block;
+            margin-left: 20px;
         }
         &--right {
             float: right;
@@ -799,6 +807,7 @@ a {
     }
 }
 
+
 /* ------------------------------------
     Page Order, Order Car Styles
 ------------------------------------- */
@@ -828,7 +837,7 @@ a {
         &--checkout {
             font-size: 30px;
             padding-top: 0px;
-            padding-bottom: 20px; 
+            padding-bottom: 20px;
         }
     }
     &__crums {
@@ -951,15 +960,21 @@ a {
     }
 }
 
+
 /* ------------------------------------
     Page Checkout, Checkout Car Styles
 ------------------------------------- */
 
 .checkout {
+    &__label {
+        font-size: 15px;
+        font-weight: normal;
+        margin-right: 6px;
+        color: #555;
+    }
     &__info {
-        height: 170px;
-        margin-left: 40px;
-        margin-right: 100px;
+        min-height: 170px;
+        margin-right: 88px;
         margin-bottom: 16px;
         background-color: #f2f2f2;
     }
@@ -967,5 +982,49 @@ a {
         font-family: 'Lato-Bold', sans-serif;
         font-size: 17px;
         margin-bottom: 30px;
+        &--regist {
+            margin-top: 44px;
+            margin-bottom: 34px;
+        }
+    }
+    &__border {
+        border-top: 1px solid #ccc;
+        margin-top: 10px;
+    }
+}
+
+.termsofuse {
+    display: inline-block;
+    &__form {
+        display: inline-block;
+    }
+    &__info {
+        margin-right: 6px;
+    }
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+    color: #fff;
+    cursor: default;
+    background-color: #27cbc0;
+    border-radius: 2px;
+    text-transform: uppercase;
+    border: none;
+}
+
+.nav-tabs>li>a {
+    text-transform: uppercase;
+    border: none;
+    transition: all .3s ease;
+    border-radius: 2px;
+    &:hover {
+        background-color: #27cbc0;
+        color: #fff;
     }
 }

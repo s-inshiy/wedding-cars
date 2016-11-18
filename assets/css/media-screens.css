@@ -144,7 +144,9 @@
     right: 6px;
     display: none;
     color: #27cbc0;
-    z-index: 999; } }
+    z-index: 999; }
+  .checkout__info {
+    margin-right: 0; } }
 
 .navbar-default .navbar-toggle,
 .navbar-default .navbar-toggle:focus,
